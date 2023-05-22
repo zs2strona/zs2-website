@@ -1,0 +1,57 @@
+@use './variables' as *;
+
+//* Footer elements
+.footer {
+  position: relative;
+  margin: auto;
+  max-width: $maxWidth;
+  height: 18vh;
+  max-height: 220px;
+  background-color: $black;
+  @include setFlex(row);
+  gap: 25px;
+  color: $white;
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  &__description {
+    @include setFlex(row);
+    justify-content: space-between;
+    line-height: 25px;
+    color: #5c5c5c;
+  }
+
+  //* Media query
+  @media all and (width <= 1280px) {
+    &__text h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+    max-width: none;
+    max-height: none;
+  }
+  @media all and (width <= 950px) {
+    &__description {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10%;
+      height: auto;
+    }
+    &__logo {
+      display: none;
+    }
+    height: auto;
+  }
+  @media all and (width <= 365px) {
+    &__text h1 {
+      font-size: 22px;
+    }
+    &__description p {
+      font-size: 14px;
+    }
+  }
+  @media all and (height <= 775px) and (width >= 955px) {
+    height: 138px;
+  }
+}

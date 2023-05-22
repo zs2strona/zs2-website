@@ -1,0 +1,126 @@
+@use './variables' as *;
+
+body {
+  overflow: visible;
+}
+
+//* Szkola elements
+.main-szkola {
+  margin: auto;
+  height: 1000px;
+  max-width: $maxWidth;
+  @include setFlex(column, space-between);
+
+  img {
+    object-fit: cover;
+  }
+
+  &__title {
+    width: 100%;
+    margin-top: 120px;
+    text-align: center;
+    font-size: 44px;
+
+    span {
+      color: $yellow;
+    }
+  }
+
+  //* Uper elements
+  &__content {
+    width: 100%;
+    @include setFlex(row);
+    gap: 25px;
+
+    &--right,
+    &--left {
+      width: 30%;
+      @include setFlex(column, center, end);
+      gap: 50px;
+    }
+  }
+  &__button {
+    width: 265px;
+    height: 50px;
+    font-size: 20px;
+    @extend %buttonGeneral;
+    border: $black solid 2px;
+
+    &--center {
+      align-self: flex-start;
+    }
+    &:hover {
+      background-color: $white;
+      color: $black;
+      border: $black solid 2px;
+      font-weight: bold;
+    }
+  }
+  hr {
+    width: 100%;
+    border: solid $yellow 1px;
+  }
+  &__posts {
+    width: 100%;
+    min-height: 400px;
+    @include setFlex(row, center, start);
+    gap: 40px;
+    flex-wrap: wrap;
+
+    &--image {
+      border-radius: 5px;
+    }
+    &--post {
+      max-width: 400px;
+      height: auto;
+      transition: 0.4s;
+
+      h2 {
+        @include setClamp;
+        font-size: 26px;
+        margin: 0px;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  //* Media query
+  @media all and (width <= 1280px) {
+    height: auto;
+    &__posts {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  @media all and (width <= 760px) {
+    &__content {
+      flex-direction: column;
+
+      &--left,
+      &--right {
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+    &__button--center {
+      align-self: center;
+    }
+  }
+  @media all and (width <= 400px) {
+    &__posts--image {
+      width: 95vw;
+    }
+  }
+  @media all and (width <= 265px) {
+    &__button {
+      width: 95vw;
+      font-size: 16px;
+    }
+    &__content--center {
+      display: none;
+    }
+  }
+}

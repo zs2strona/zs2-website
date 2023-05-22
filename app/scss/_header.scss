@@ -1,0 +1,231 @@
+@use './variables' as *;
+
+//* Header general elements
+.header {
+  &__cointainer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    max-width: 95%;
+    min-height: 120px;
+    @include setFlex(row);
+    justify-content: space-between;
+    z-index: 5;
+  }
+  &__cointainer--left {
+    display: flex;
+    gap: 89px;
+  }
+  &__media {
+    display: flex;
+    gap: 36px;
+  }
+  &__nav {
+    display: flex;
+    gap: 39px;
+  }
+  &__menu {
+    margin-top: 2px;
+    background: none;
+    border: none;
+    padding: 0px;
+    width: 23px;
+    height: 20px;
+    @include setFlex(column);
+    gap: 5px;
+    z-index: 6;
+    cursor: pointer;
+  }
+
+  &__menu-item--white,
+  &__menu-item--black {
+    position: relative;
+    width: 100%;
+    height: 3px;
+  }
+  &__menu-item--white {
+    background-color: $white;
+  }
+  &__menu-item--black {
+    background-color: $black;
+    @media all and (width >= 555px) {
+      transition-delay: 0.4s;
+    }
+  }
+
+  //* Droped search
+  @keyframes animation-search-start {
+    0% {
+      max-width: 80px;
+    }
+    100% {
+      max-width: 170px;
+    }
+  }
+  .search-image {
+    //! OFF
+    display: none;
+    //* OFF
+    cursor: pointer;
+  }
+  .search--hidden {
+    display: none;
+  }
+  .search--visible {
+    display: block;
+    animation: animation-search-start 0.4s ease-out;
+  }
+  .search-input {
+    outline: none;
+    margin-right: -19px;
+    min-height: 18px;
+    max-width: 170px;
+    border: $black solid 1px;
+    background: none;
+  }
+
+  //* Droped menu
+  @keyframes slide-right-menu {
+    0% {
+      transform: translateX(40vw);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+  @keyframes slide-left-menu {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(45vw);
+    }
+  }
+  &__menu--droped__media {
+    position: absolute;
+    filter: invert(100%);
+    bottom: 5%;
+    right: 5%;
+    display: none;
+    img {
+      margin-inline: 5px;
+    }
+  }
+  .menu--hidden,
+  .menu--visible {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu--hidden {
+    visibility: hidden;
+    @media all and (width >= 555px) {
+      animation: slide-left-menu 0.5s ease-out;
+      transition: visibility 0.5s;
+    }
+  }
+  .menu--visible {
+    visibility: visible;
+    @media all and (width >= 555px) {
+      animation: slide-right-menu 0.5s ease-out;
+    }
+  }
+  &__menu--droped {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 40vw;
+    height: 100vh;
+    background-color: $black;
+    z-index: 5;
+    @include setFlex(row, end);
+    gap: 25px;
+
+    hr {
+      width: 28vw;
+      margin-right: 2vw;
+      border: solid $yellow 1px;
+    }
+    ul {
+      list-style: none;
+      margin-right: 3vw;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      gap: 20px;
+      font-size: 32px;
+      color: $white;
+    }
+
+    //* Link hover
+    a::before {
+      content: '';
+      bottom: -2px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      scale: 0 1;
+      background-color: $yellow;
+      transform-origin: left;
+      transition: 0.4s;
+    }
+    a:hover::before {
+      scale: 1;
+    }
+  }
+
+  //* Media query
+  @media all and (width <= 720px) {
+    &__media {
+      display: none;
+    }
+    &__menu--droped {
+      width: 60vw;
+      ul {
+        font-size: 28px;
+      }
+    }
+    .logo {
+      width: 55vw;
+      height: auto;
+    }
+    &__menu--droped__media {
+      display: block;
+    }
+    .search-input {
+      position: absolute;
+      right: 15px;
+      top: 80px;
+    }
+  }
+  @media all and (width <= 400px) {
+    &__menu--droped {
+      width: 70vw;
+    }
+    &__nav {
+      gap: 20px;
+    }
+  }
+  @media all and (width <= 290px) {
+    &__menu--droped {
+      width: 100%;
+    }
+    .menu--hidden,
+    .menu--visible {
+      animation: none;
+      transition: 0s;
+    }
+  }
+  @media all and (height <= 690px) {
+    &__menu--droped__media {
+      bottom: 0;
+      right: 8vw;
+    }
+    &__menu--droped ul {
+      font-size: 22px;
+      margin-right: 8vw;
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "ogloszenia": [
+    {
+      "title": "Pierwsze ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-pierwsze"
+    },
+    {
+      "title": "Drugie ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-drugie"
+    },
+    {
+      "title": "Trzecie ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-trzecie"
+    },
+    {
+      "title": "Czwarte ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-czwarte"
+    },
+    {
+      "title": "Piąte ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-piate"
+    },
+    {
+      "title": "Szóste ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-szoste"
+    },
+    {
+      "title": "Siódme ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-siodme"
+    },
+    {
+      "title": "Ósme ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-osme"
+    },
+    {
+      "title": "Dziesiąte ogłoszenie",
+      "content": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet deleniti quam aliquam, corporis, cupiditate, consequatur unde maiores inventore modi tenetur aspernatur reiciendis eaque laudantium nam minus blanditiis! Explicabo, blanditiis eveniet.",
+      "img": "/Placeholder.png",
+      "slug": "ogloszenia-dziesiate"
+    }
+  ],
+
+  "SzkolaPosty": [
+    {
+      "title": "Pierwsze Miejsce",
+      "img": "/Placeholder.png",
+      "slug": ""
+    },
+    {
+      "title": "Drugie Miejsce",
+      "img": "/Placeholder.png",
+      "slug": ""
+    },
+    {
+      "title": "Trzecie Miejsce",
+      "img": "/Placeholder.png",
+      "slug": ""
+    }
+  ],
+
+  "Kadra": [
+    {
+      "title": "Dominik Zwoliński",
+      "content": "Domun+",
+      "img": "/Placeholder.png"
+    },
+    {
+      "title": "Dominik Zwoliński",
+      "content": "Domun+",
+      "img": "/Placeholder.png"
+    },
+    {
+      "title": "Dominik Zwoliński",
+      "content": "Domun+",
+      "img": "/Placeholder.png"
+    },
+    {
+      "title": "Dominik Zwoliński",
+      "content": "Domun+",
+      "img": "/Placeholder.png"
+    },
+    {
+      "title": "Dominik Zwoliński",
+      "content": "Domun+",
+      "img": "/Placeholder.png"
+    },
+    {
+      "title": "Dominik Zwoliński",
+      "content": "Domun+",
+      "img": "/Placeholder.png"
+    }
+  ],
+
+  "Dokumenty": [
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    },
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    },
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    },
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    },
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    },
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    },
+    {
+      "url": "pdf/Prośba o wydanie duplikatu świadectwa.pdf",
+      "title": "Informacje o rekrutacji",
+      "content": "Informacje o rekrutacji na rok 2023/2024"
+    }
+  ],
+
+  "Posty": [
+    {
+      "slug": "oglaszamy-nabor-w-ramach-projektu-ponadnarodowa-mobilnosc-uczniow-kierunek-valladolid-czekamy-na-zgloszenia-do-15-marca-2023",
+      "title": "OGŁASZAMY NABÓR W RAMACH PROJEKTU PONADNARODOWA MOBILNOŚĆ UCZNIÓW - kierunek Valladolid! Czekamy na zgłoszenia do 15 marca 2023",
+      "content": "Informujemy o rozpoczęciu rekrutacji uczniów do udziału w projekcie „Jedna Europa - Wiele Talentów, który przewiduje 7 dniową mobilność tj. 5 dni zajęć merytorycznych oraz 2 dni podróży.Przed wyjazdem uczniowie wezmą udział w przygotowaniu językowym oraz kulturowo-pedagogicznym, a po zakończonej mobilności uczniowie otrzymają odpowiednie certyfikaty.",
+      "data": "2023/03/08",
+      "image": "/akt-images/akt1.png"
+    },
+    {
+      "slug": "tango-w-rzeszowie",
+      "title": "„Tango” w Rzeszowie",
+      "content": "Dnia 24 lutego 2023 r. klasy maturalne obejrzały w Wojewódzkim Domu Kultury w Rzeszowie spektakl teatralny 'Tango' w reżyserii Piotra Cyrwusa. Sztukę przedstawili aktorzy z Krakowa. Uczniom przypadła do gustu interpretacja dramatu Mrożka. Gra aktorska była okazją do przeżycia emocji innych niż seans w kinie czy film w telewizji. Tym bardziej, że jest to także lektura obowiązkowa a matura tuż...tuż. Opiekunowie: A. Gawaluch i G. Kolasa",
+      "data": "2023/02/28",
+      "image": "/akt-images/akt2.png"
+    },
+    {
+      "slug": "tydzien-z-przedmiotami-matematycznymi-przyrodniczymi",
+      "title": "Tydzień z przedmiotami matematyczno - przyrodniczymi",
+      "content": "W dniach 21-24 lutego w naszej szkole odbył się tydzień przedmiotów matematyczno- przyrodniczych. Nauczyciele przygotowali dla uczniów wiele atrakcji, które miały na celu rozwinąć zainteresowania przedmiotami ścisłymi. Na korytarzach szkolnych znajdowała się wystawa pt.” Znani współcześni”. Zaprezentowano na niej sylwetki słynnych Polaków – podróżników, naukowców <br /><br /> i wynalazców, m.in. szachisty Jana Krzysztofa Dudy, matematyków pochodzących z naszego regionu: Jana Marszała, Franciszka Lei oraz Stefana Banacha, a także himalaistów Wandy Rutkiewicz i Jerzego Kukuczki. Na gazetkach szkolnych zamieszczone były ciekawostki przyrodnicze oraz zagadki",
+      "data": "2023/02/28",
+      "image": "/akt-images/akt3.png"
+    },
+    {
+      "slug": "walentynki-przezyjmy-to-jeszcze-raz",
+      "title": "Walentynki - przeżyjmy to jeszcze raz",
+      "content": "Walentynki.",
+      "data": "2023/02/27",
+      "image": "/akt-images/akt4.png"
+    },
+    {
+      "slug": "matematyka-po-raz-setny",
+      "title": "Matematyka po raz setny",
+      "content": "Matematyka po raz setny.",
+      "data": "2023/02/24",
+      "image": "/akt-images/akt5.png"
+    },
+    {
+      "slug": "kiermasz-walentynkowy-pod-haslem-sercem-z-karolina",
+      "title": "Kiermasz walentynkowy pod hasłem „Sercem z Karoliną”",
+      "content": "Kiermasz walentynkowy.",
+      "data": "2023/02/16",
+      "image": "/akt-images/akt6.png"
+    },
+    {
+      "slug": "sukces-adama-w-ekologicznym-konkursie",
+      "title": "Sukces Adama w ekologicznym konkursie! 🌿",
+      "content": "Sukces Adama w konkursie!",
+      "data": "2023/02/14",
+      "image": "/akt-images/akt7.png"
+    },
+    {
+      "slug": "pomozmy-karolinie",
+      "title": "Pomóżmy Karolinie",
+      "content": "Pomóżmy Karolinie.",
+      "data": "2023/02/05",
+      "image": "/akt-images/akt8.png"
+    },
+    {
+      "slug": "jestesmy-najlepsi-w-powiecie-ale-czy-kogos-to-dziwi",
+      "title": "Jesteśmy najlepsi w powiecie! Ale czy kogoś to dziwi?",
+      "content": "Jesteśmy najlepsi w powiecie!",
+      "data": "2023/02/01",
+      "image": "/akt-images/akt9.png"
+    },
+    {
+      "slug": "tenis-stolowy",
+      "title": "Tenis stołowy",
+      "content": "Tenis stołowy.",
+      "data": "2023/01/12",
+      "image": "/akt-images/akt10.png"
+    },
+    {
+      "slug": "pomagam",
+      "title": "POMAGAM",
+      "content": "POMAGAM.",
+      "data": "2022/12/23",
+      "image": "/akt-images/akt11.png"
+    },
+    {
+      "slug": "3ta-i-dni-otwarte-podkarpackiego-centrum-innowacji",
+      "title": "3TA i Dni Otwarte Podkarpackiego Centrum Innowacji",
+      "content": "3TA i Dni Otwarte.",
+      "data": "2022/12/15",
+      "image": "/akt-images/akt12.png"
+    },
+    {
+      "slug": "balet-piotra-czajkowskiego-dziadek-do-orzechow",
+      "title": "Balet Piotra Czajkowskiego „Dziadek do orzechów”",
+      "content": "Balet Piotra Czajkowskiego.",
+      "data": "2022/12/15",
+      "image": "/akt-images/akt13.png"
+    },
+    {
+      "slug": "stypendyści-prezesa-rady-ministrów",
+      "title": "Stypendyści Prezesa Rady Ministrów",
+      "content": "Stypendyści.",
+      "data": "2022/12/15",
+      "image": "/akt-images/akt14.png"
+    },
+    {
+      "slug": "nasi-laureaci",
+      "title": "Nasi laureaci!",
+      "content": "Nasi laureaci!",
+      "data": "2022/12/11",
+      "image": "/akt-images/akt15.png"
+    }
+  ]
+}

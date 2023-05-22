@@ -1,0 +1,65 @@
+@use './variables' as *;
+
+body {
+  overflow: visible;
+}
+
+//* Post elements
+.main-post {
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  width: $maxWidth;
+  height: auto;
+  min-height: calc(82vh - 120px);
+  @include setFlex(column, center, none);
+
+  span {
+    color: $yellow;
+  }
+
+  &__date {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__slider {
+    margin: 0px;
+    align-self: center;
+
+    &--img {
+      width: 600px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+  &__title {
+    font-size: 40px;
+  }
+  &__border {
+    width: 100%;
+    border: $yellow solid 1px;
+  }
+  &__content {
+    font-size: 20px;
+  }
+  a {
+    align-self: end;
+  }
+  &__return {
+    min-height: 40px;
+    min-width: 180px;
+    @extend %buttonGeneral;
+    @include setFlex(row);
+    gap: 10px;
+    font-size: 18px;
+
+    &::after {
+      content: url(/Arrow.png);
+      scale: 0.8;
+    }
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}

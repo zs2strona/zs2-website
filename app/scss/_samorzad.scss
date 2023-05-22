@@ -1,0 +1,153 @@
+@use '../scss/variables' as *;
+
+body {
+  overflow: visible;
+}
+
+//Main
+.container {
+  .main-header {
+    position: relative;
+    margin: auto;
+    margin-top: 120px;
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+  }
+  span {
+    color: $yellow;
+  }
+  .main-container {
+    position: relative;
+    padding-top: 50px;
+    height: auto;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    border-top: solid 3px $yellow;
+    border-bottom: solid 3px $yellow;
+    padding-bottom: 5%;
+    img {
+      object-fit: cover;
+    }
+  }
+  .main-names {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-left: solid 3px $yellow;
+    border-right: solid 3px $yellow;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+  .main-guards-title {
+    position: relative;
+    padding-top: 5%;
+    height: auto;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    border-top: solid 3px $yellow;
+    border-bottom: solid 3px $yellow;
+    font-size: 25px;
+    img {
+      object-fit: cover;
+    }
+  }
+  .main-guards {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+    gap: 5%;
+    border-bottom: solid 3px $yellow;
+    h2 {
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+  .main-discounts {
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+    padding-bottom: 5%;
+    border-bottom: solid 3px $yellow;
+    h2 {
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    &__button {
+      margin: auto;
+      width: 38vw;
+      min-height: 65px;
+      font-size: 31px;
+      margin-top: 5%;
+      @extend %buttonGeneral;
+
+      span {
+        color: $yellow;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .main-footer {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  h3 {
+    margin-top: 10%;
+  }
+  h4 {
+    text-align: center;
+    margin: 1%;
+  }
+}

@@ -1,0 +1,74 @@
+@use './variables' as *;
+
+body {
+  overflow: hidden;
+}
+
+.main-page {
+  //* Video on main page
+  &__video {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    filter: opacity(0.8);
+  }
+
+  //* Footer in main page
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 120px;
+    z-index: 2;
+    text-align: center;
+  }
+  &__description {
+    margin: auto;
+    min-height: 100px;
+    @include setFlex(row);
+    gap: 3vw;
+    font-size: $paragraphSize;
+  }
+  &__button {
+    margin: auto;
+    width: 38vw;
+    min-height: 65px;
+    font-size: 31px;
+    @extend %buttonGeneral;
+
+    span {
+      color: $yellow;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  //* Media query
+  @media all and (width <= 720px) {
+    width: 100%;
+
+    &__description {
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      font-size: 14px;
+    }
+    &__button {
+      width: 70vw;
+      font-size: 26px;
+      min-height: 50px;
+    }
+  }
+  @media all and (width <= 400px) {
+    &__button {
+      width: 80vw;
+      font-size: 22px;
+      min-height: 45px;
+    }
+  }
+}

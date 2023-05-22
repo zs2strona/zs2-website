@@ -1,0 +1,32 @@
+//* Varoables
+$white: #ffffff;
+$black: #000000;
+$yellow: #ffd058;
+$paragraphSize: 16px;
+$maxWidth: 1280px;
+
+//* Flex template
+@mixin setFlex($flex-direction, $justify-content: center, $align-items: center) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+//* Clamp template
+@mixin setClamp($line-clamp: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clamp;
+  overflow: hidden;
+}
+
+//* General button elements
+%buttonGeneral {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: 0.4s;
+  background-color: $black;
+  color: $white;
+}

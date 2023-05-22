@@ -1,0 +1,30 @@
+.slider-container {
+  margin: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  .slide {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  .current {
+    scale: 1.2;
+  }
+  .arrow {
+    width: auto;
+    height: 60px;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &--rivers {
+      transform: rotate(-180deg);
+    }
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

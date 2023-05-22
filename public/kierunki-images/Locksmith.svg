@@ -1,0 +1,12 @@
+<svg width="108" height="118" viewBox="0 0 108 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M57 38C57 53.4958 44.6563 66 29.5 66C14.3437 66 2 53.4958 2 38C2 22.5042 14.3437 10 29.5 10C44.6563 10 57 22.5042 57 38Z" stroke="#C3BDC9" stroke-width="4"/>
+<path d="M8.23912 116L16.0481 47H43.9901L53.6989 116H8.23912Z" stroke="#C3BDC9" stroke-width="4"/>
+<path d="M17 55H43.5L50.5 111H11L17 55Z" fill="white"/>
+<ellipse cx="29.5" cy="38.5" rx="26.5" ry="25.5" fill="white"/>
+<path d="M4.21387 43.1812L98.6461 4.00811" stroke="#88868A" stroke-width="5"/>
+<line y1="-2" x2="102.063" y2="-2" transform="matrix(0.992531 0.121997 -0.118561 0.992947 5.89941 48.7391)" stroke="#A19DA6" stroke-width="4"/>
+<path d="M3 41H5.03175L6 44.8766L4.01587 46L3 41Z" fill="#88868A"/>
+<path d="M4 45.469L7.03557 45L8 49L5.51779 48.7521L4 45.469Z" fill="#A19DA6"/>
+<rect width="5.06905" height="13.6484" transform="matrix(0.910118 -0.41435 0.40447 0.914551 75.8486 6.37572)" fill="#88868A"/>
+<rect width="5.06905" height="13.6484" transform="matrix(0.910118 -0.41435 0.40447 0.914551 84.2764 2.10036)" fill="#88868A"/>
+</svg>

@@ -1,0 +1,56 @@
+@use './variables' as *;
+
+body {
+  overflow: visible;
+}
+
+//* Rekrutacja elements
+.main-stowarzyszenie {
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: calc(82vh - 692px);
+  max-width: $maxWidth;
+  @include setFlex(column);
+  text-align: center;
+
+  &__title {
+    font-size: 25px;
+
+    span {
+      color: $yellow;
+    }
+    h4 {
+      max-width: 60%;
+      margin: auto;
+    }
+  }
+  img {
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+
+  //* Media query
+  @media all and (width < 780px) {
+    margin-top: 120px;
+  }
+  @media all and (width <= 555px) {
+    &__button {
+      width: 80vw;
+    }
+  }
+  @media all and (width <= 400px) {
+    img {
+      width: 100vw;
+    }
+    &__title h1 {
+      font-size: 1.8rem;
+    }
+    &__button {
+      font-size: 25px;
+    }
+  }
+  @media all and (height <= 850px) {
+    margin-bottom: 20px;
+  }
+}

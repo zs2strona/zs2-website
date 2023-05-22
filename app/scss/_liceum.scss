@@ -1,0 +1,105 @@
+@use './variables' as *;
+
+body {
+  overflow: visible;
+}
+
+//* Liceum elements
+.liceum-main {
+  margin: auto;
+  max-width: $maxWidth;
+
+  //* Header
+  &__header {
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 46px;
+  }
+
+  //* Container
+  &__container {
+    margin-top: 60px;
+    height: auto;
+    width: 100%;
+    @include setFlex(row, space-between, start);
+    img {
+      object-fit: cover;
+    }
+
+    &--police,
+    &--military {
+      max-width: 600px;
+      @include setFlex(column);
+      gap: 2vh;
+    }
+    &--title {
+      width: 100%;
+      height: 76px;
+      @include setFlex(row, space-between);
+
+      h1 {
+        color: #1a1a1a;
+        font-size: 34px;
+      }
+    }
+    &--border {
+      height: 720px;
+      border: solid $yellow 1px;
+    }
+  }
+
+  //* Footer
+  &__footer {
+    width: 100%;
+    height: 160px;
+    @include setFlex(row);
+
+    &--button {
+      width: 320px;
+      height: 60px;
+      font-size: 26px;
+      @extend %buttonGeneral;
+      color: $yellow;
+
+      &:hover {
+        transform: scale(1.06);
+      }
+    }
+  }
+
+  //* Media query
+  @media all and (width <= 1202px) {
+    &__container {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &--border {
+        display: none;
+      }
+    }
+  }
+  @media all and (width <= 600px) {
+    &__container {
+      &--police,
+      &--military {
+        width: 100%;
+      }
+      &--title {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+      }
+      &--image {
+        width: 100%;
+      }
+    }
+    &__header {
+      font-size: 36px;
+    }
+    &__footer--button {
+      width: 85vw;
+    }
+  }
+}
