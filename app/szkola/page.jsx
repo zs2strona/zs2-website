@@ -46,7 +46,9 @@ export default function Szkola() {
                 Kadra
               </button>
             </Link>
-            <button className="main-szkola__button">Samorząd szkolny</button>
+            <Link href="/samorzad">
+              <button className="main-szkola__button">Samorząd szkolny</button>
+            </Link>
             <Link
               href="/stowarzyszenie"
               className="main-szkola__button--center"

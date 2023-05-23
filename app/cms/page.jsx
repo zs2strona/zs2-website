@@ -1,7 +1,6 @@
 import client from './apollo-client'
 import { gql } from '@apollo/client'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Cms({ hypers }) {
   return (
@@ -13,22 +12,7 @@ export default function Cms({ hypers }) {
           <h1>Hyper</h1>
         </div>
 
-        <div className="main__container">
-          {hypers.map((movie, i) => (
-            <Link key={i} href={movie.slug}>
-              <div key={i} className="main__movie">
-                <Image
-                  src={movie.image.url}
-                  alt={movie.title}
-                  width={300}
-                  height={400}
-                />
-
-                <h2>{movie.title}</h2>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <div className="main__container"></div>
       </main>
     </>
   )
