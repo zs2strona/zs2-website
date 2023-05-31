@@ -18,7 +18,7 @@ export default function CadrePage({ cadres }) {
 
       <main className={`main-blogPage ${inter.className}`}>
         <h1 className="main-blogPage__title">
-          Kadra Dyrektorska w <span>Naszej</span> Szkole!
+          Dyrekcja w <span>Naszej</span> Szkole!
         </h1>
 
         <section className="main-blogPage__container">
@@ -95,7 +95,7 @@ export default function CadrePage({ cadres }) {
 
           <div className="main-blogPage__separation">
             <h1>
-              Kadra Pracownicza w <span>Naszej</span> Szkole!
+              Pracownicy w <span>Naszej</span> Szkole!
             </h1>
             <hr className="main-blogPage__separation--border" />
           </div>

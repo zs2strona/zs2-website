@@ -84,7 +84,7 @@ export default function Header() {
               <div className="header__menu--droped">
                 <ul>
                   <li>
-                    <Link href="/dziennik">e-dziennik</Link>
+                    <Link href="/dziennik">e-Dziennik</Link>
                   </li>
                   <li>
                     <Link href="/plan_lekcji">Plan lekcji</Link>
