@@ -38,7 +38,7 @@ export default function Home() {
               </Link>
             </p>
             <p>
-              <Link href="/" target="_blank">
+              <Link href="https://do-moon.vercel.app" target="_blank">
                 Design & Code by DoMoon
               </Link>
               <br />

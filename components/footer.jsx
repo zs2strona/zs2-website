@@ -35,7 +35,7 @@ export default function Footer() {
             </p>
 
             <p>
-              <Link href="/">Design & Code by DoMoon</Link>
+              <Link href="https://do-moon.vercel.app">Design & Code by DoMoon</Link>
               <br />
               <Link
                 href="https://media.graphassets.com/o6lzAgp8QNKos25g4KcW"
