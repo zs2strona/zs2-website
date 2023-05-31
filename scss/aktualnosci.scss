@@ -1,0 +1,123 @@
+@use './variables' as *;
+
+body {
+  overflow-y: visible;
+}
+
+//* Aktualnosci elements
+.main-aktualnosci {
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 5vh;
+  max-width: $maxWidth;
+  height: auto;
+  @include setFlex(column);
+  gap: 40px;
+
+  &__text {
+    margin-top: 15px;
+    @include setFlex(column, none, none);
+    align-self: flex-start;
+    gap: 10px;
+
+    h1 {
+      margin: 0px;
+      font-size: 38px;
+      line-height: 46px;
+      font-weight: bold;
+    }
+    p {
+      margin: 0px;
+      font-size: 16px;
+    }
+    span {
+      color: $yellow;
+    }
+    @media all and (width <= 400px) {
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  &__text--outher {
+    width: 100%;
+    grid-column: span 3;
+    @media all and (width <= 1280px) {
+      grid-column: span 2;
+    }
+    @media all and (width <= 840px) {
+      grid-column: 1;
+    }
+    margin-top: 0px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media all and (width <= 1280px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media all and (width <= 840px) {
+      grid-template-columns: 1fr;
+    }
+    gap: 40px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+
+      @media all and (width <= 400px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  //* Post styles
+  .content__item {
+    max-width: 400px;
+    cursor: pointer;
+    transition: 0.4s;
+    h2 {
+      @include setClamp;
+      height: 57px;
+      font-weight: 600;
+    }
+    &:hover {
+      transform: scale(1.06);
+      @media all and (width <=420) {
+        transform: scale(0);
+      }
+    }
+  }
+  .content__item--image {
+    object-fit: cover;
+    border-radius: 5px;
+    @media all and (width <= 400px) {
+      width: 100%;
+    }
+  }
+  .main-button {
+    width: 265px;
+    height: 50px;
+    align-self: flex-end;
+    font-size: $paragraphSize;
+    @extend %buttonGeneral;
+    @include setFlex(row);
+    gap: 12px;
+    span span {
+      color: $yellow;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media all and (width <= 280px) {
+      width: 90%;
+      align-self: center;
+    }
+  }
+}

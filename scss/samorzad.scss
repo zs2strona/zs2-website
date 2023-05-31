@@ -1,0 +1,128 @@
+@use './variables' as *;
+
+body {
+  overflow: visible;
+}
+
+//* Main
+.container {
+  .main-header {
+    margin: auto;
+    margin-top: 120px;
+    max-width: $maxWidth;
+    height: auto;
+    @include setFlex(column);
+    font-size: 25px;
+  }
+  span {
+    color: $yellow;
+  }
+  .main-container {
+    padding-top: 50px;
+    height: auto;
+    max-width: $maxWidth;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    border-top: solid 3px $yellow;
+    border-bottom: solid 3px $yellow;
+    padding-bottom: 5%;
+    img {
+      object-fit: cover;
+    }
+  }
+  .main-names {
+    margin: auto;
+    margin-top: 50px;
+    max-width: $maxWidth;
+    height: auto;
+    @include setFlex(column);
+    font-size: 20px;
+    border-left: solid 3px $yellow;
+    border-right: solid 3px $yellow;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+    h2 {
+      margin-bottom: 0px;
+    }
+  }
+  .main-guards-title {
+    padding-top: 5%;
+    height: auto;
+    max-width: $maxWidth;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    border-top: solid 3px $yellow;
+    border-bottom: solid 3px $yellow;
+    font-size: 25px;
+    img {
+      object-fit: cover;
+    }
+  }
+  .main-guards {
+    margin: auto;
+    margin-top: 50px;
+    max-width: $maxWidth;
+    height: auto;
+    @include setFlex(row);
+    font-size: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+    gap: 5%;
+    border-bottom: solid 3px $yellow;
+    h2 {
+      margin-bottom: 0px;
+      text-align: center;
+    }
+  }
+  .main-discounts {
+    margin: auto;
+    margin-top: 50px;
+    max-width: $maxWidth;
+    height: auto;
+    @include setFlex(column);
+    font-size: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 3%;
+    padding-bottom: 5%;
+    border-bottom: solid 3px $yellow;
+    h2 {
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    &__button {
+      margin: auto;
+      width: 38vw;
+      min-height: 65px;
+      font-size: 31px;
+      margin-top: 5%;
+      @extend %buttonGeneral;
+
+      span {
+        color: $yellow;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  .main-footer {
+    margin: auto;
+    margin-top: 5%;
+    max-width: $maxWidth;
+    height: auto;
+    @include setFlex(column);
+    font-size: 25px;
+    margin-bottom: 5%;
+  }
+  h3 {
+    margin-top: 10%;
+  }
+  h4 {
+    text-align: center;
+    margin: 1%;
+  }
+}

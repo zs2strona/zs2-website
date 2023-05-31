@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  reactStrictMode: true,
+
+  images: {
+    domains: ['media.graphassets.com'],
   },
+
   async redirects() {
     return [
       {
@@ -18,16 +21,6 @@ const nextConfig = {
       {
         source: '/nabor',
         destination: 'https://nabor.pcss.pl/lancut',
-        permanent: true,
-      },
-      {
-        source: '/prywatnosc',
-        destination: 'https://media.graphassets.com/zG7PkIAqTveHpA7HKki6',
-        permanent: true,
-      },
-      {
-        source: '/rabaty',
-        destination: 'http://zs2rabaty.prv.pl',
         permanent: true,
       },
     ]
