@@ -10,7 +10,14 @@ export default function Home() {
       <Layout title="Strona główna" />
 
       <main className="main-page">
-        <video src="/movie.mp4" autoPlay={true} muted loop className="main-page__video" />
+        <video
+          className="main-page__video"
+          src="/movie.mp4"
+          autoPlay="autoplay"
+          playsInline="playsinline"
+          loop="true"
+          muted="true"
+        />
 
         <footer className="main-page__footer">
           <Link href="/rekrutacja">
