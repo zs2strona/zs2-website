@@ -25,7 +25,7 @@ export default function DocumentsPage({ documents }) {
           {documents.map(
             (document) =>
               document.hidden === 'Nie' && (
-                <div key={document.slug} className="main-blogPage__item">
+                <div key={document.id} className="main-blogPage__item">
                   <Link href={document.file.url}>
                     <Image
                       src="document-icon.svg"
@@ -60,6 +60,7 @@ export async function getStaticProps() {
     query: gql`
       query {
         documents(first: 1000) {
+          id
           title
           description
           file {

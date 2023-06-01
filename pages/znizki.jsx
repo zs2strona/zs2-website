@@ -1,7 +1,6 @@
 import Footer from '@/components/footer'
 import { Layout } from '@/template/layout'
 import Image from 'next/image'
-import Link from 'next/link'
 import client from '@/lib/apollo-client'
 import { gql } from '@apollo/client'
 import { useRouter } from 'next/router'
@@ -35,25 +34,23 @@ export default function DiscountsPage({ discounts }) {
         <section className="main-blogPage__container">
           {discounts.map((discount) => (
             <div key={discount.title} className="main-blogPage__item">
-              <Link href="/znizki">
-                <Image
-                  src={discount.image.url}
-                  alt={discount.title}
-                  width="200"
-                  height="200"
-                  className="main-blogPage__item--image"
-                />
+              <Image
+                src={discount.image.url}
+                alt={discount.title}
+                width="200"
+                height="200"
+                className="main-blogPage__item--image"
+              />
 
-                <div className="main-blogPage__item-texts">
-                  <h2>{discount.title}</h2>
-                  <div
-                    className="znizki"
-                    dangerouslySetInnerHTML={{
-                      __html: discount.description.html,
-                    }}
-                  />
-                </div>
-              </Link>
+              <div className="main-blogPage__item-texts">
+                <h2>{discount.title}</h2>
+                <div
+                  className="znizki"
+                  dangerouslySetInnerHTML={{
+                    __html: discount.description.html,
+                  }}
+                />
+              </div>
             </div>
           ))}
         </section>

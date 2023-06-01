@@ -49,7 +49,8 @@ export default function Header() {
 
               <div className="header__nav">
                 <div className={isToggleSearchOn ? 'search--visible' : 'search--hidden'}>
-                  <input type="text" className="search-input" />
+                  <input type="text" className="search-input" name="search" />
+                  <label htmlFor="search"></label>
                 </div>
 
                 <Image

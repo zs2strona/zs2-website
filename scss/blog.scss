@@ -68,6 +68,7 @@ body {
     column-gap: 80px;
     row-gap: 40px;
   }
+  &__item,
   &__item a {
     width: 100%;
     @include setFlex(row, flex-start, none);

@@ -23,9 +23,9 @@ export default function Szkola({ schools }) {
             <Link href="/dokumenty">
               <button className="main-szkola__button">Dokumenty</button>
             </Link>
-            <Link href="/studia-podyplomowe" className="main-szkola__button--center">
+            <Link href="/stowarzyszenie" className="main-szkola__button--center">
               <button className="main-szkola__button main-szkola__button--center">
-                Studia podyplomowe
+                Stowarzyszenie
               </button>
             </Link>
             <Link href="/znizki">
@@ -50,9 +50,9 @@ export default function Szkola({ schools }) {
             <Link href="/samorzad">
               <button className="main-szkola__button">Samorząd szkolny</button>
             </Link>
-            <Link href="/stowarzyszenie" className="main-szkola__button--center">
+            <Link href="/studia-podyplomowe" className="main-szkola__button--center">
               <button className="main-szkola__button main-szkola__button--center">
-                Stowarzyszenie
+                Studia podyplomowe
               </button>
             </Link>
           </div>

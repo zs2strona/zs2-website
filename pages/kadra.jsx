@@ -26,30 +26,28 @@ export default function CadrePage({ cadres }) {
             (cadre) =>
               cadre.section === 'dyrekcja' && (
                 <div key={cadre.title} className="main-blogPage__item">
-                  <Link href="/kadra">
-                    {cadre.image ? (
-                      <Image
-                        src={cadre.image.url}
-                        alt={cadre.title}
-                        width="200"
-                        height="200"
-                        className="main-blogPage__item--image"
-                      />
-                    ) : (
-                      <Image
-                        src="/teacher_icon.svg"
-                        alt={cadre.title}
-                        width="200"
-                        height="200"
-                        className="main-blogPage__item--image"
-                      />
-                    )}
+                  {cadre.image ? (
+                    <Image
+                      src={cadre.image.url}
+                      alt={cadre.title}
+                      width="200"
+                      height="200"
+                      className="main-blogPage__item--image"
+                    />
+                  ) : (
+                    <Image
+                      src="/teacher_icon.svg"
+                      alt={cadre.title}
+                      width="200"
+                      height="200"
+                      className="main-blogPage__item--image"
+                    />
+                  )}
 
-                    <div className="main-blogPage__item-texts">
-                      <h2>{cadre.title}</h2>
-                      <p>{cadre.description}</p>
-                    </div>
-                  </Link>
+                  <div className="main-blogPage__item-texts">
+                    <h2>{cadre.title}</h2>
+                    <p>{cadre.description}</p>
+                  </div>
                 </div>
               )
           )}
@@ -65,30 +63,28 @@ export default function CadrePage({ cadres }) {
             (cadre) =>
               cadre.section === 'nauczyciele' && (
                 <div key={cadre.title} className="main-blogPage__item">
-                  <Link href="/kadra">
-                    {cadre.image ? (
-                      <Image
-                        src={cadre.image.url}
-                        alt={cadre.title}
-                        width="200"
-                        height="200"
-                        className="main-blogPage__item--image"
-                      />
-                    ) : (
-                      <Image
-                        src="/teacher_icon.svg"
-                        alt={cadre.title}
-                        width="200"
-                        height="200"
-                        className="main-blogPage__item--image"
-                      />
-                    )}
+                  {cadre.image ? (
+                    <Image
+                      src={cadre.image.url}
+                      alt={cadre.title}
+                      width="200"
+                      height="200"
+                      className="main-blogPage__item--image"
+                    />
+                  ) : (
+                    <Image
+                      src="/teacher_icon.svg"
+                      alt={cadre.title}
+                      width="200"
+                      height="200"
+                      className="main-blogPage__item--image"
+                    />
+                  )}
 
-                    <div className="main-blogPage__item-texts">
-                      <h2>{cadre.title}</h2>
-                      <p>{cadre.description}</p>
-                    </div>
-                  </Link>
+                  <div className="main-blogPage__item-texts">
+                    <h2>{cadre.title}</h2>
+                    <p>{cadre.description}</p>
+                  </div>
                 </div>
               )
           )}
@@ -104,30 +100,28 @@ export default function CadrePage({ cadres }) {
             (cadre) =>
               cadre.section === 'pracownicy' && (
                 <div key={cadre.title} className="main-blogPage__item">
-                  <Link href="/kadra">
-                    {cadre.image ? (
-                      <Image
-                        src={cadre.image.url}
-                        alt={cadre.title}
-                        width="200"
-                        height="200"
-                        className="main-blogPage__item--image"
-                      />
-                    ) : (
-                      <Image
-                        src="/teacher_icon.svg"
-                        alt={cadre.title}
-                        width="200"
-                        height="200"
-                        className="main-blogPage__item--image"
-                      />
-                    )}
+                  {cadre.image ? (
+                    <Image
+                      src={cadre.image.url}
+                      alt={cadre.title}
+                      width="200"
+                      height="200"
+                      className="main-blogPage__item--image"
+                    />
+                  ) : (
+                    <Image
+                      src="/teacher_icon.svg"
+                      alt={cadre.title}
+                      width="200"
+                      height="200"
+                      className="main-blogPage__item--image"
+                    />
+                  )}
 
-                    <div className="main-blogPage__item-texts">
-                      <h2>{cadre.title}</h2>
-                      <p>{cadre.description}</p>
-                    </div>
-                  </Link>
+                  <div className="main-blogPage__item-texts">
+                    <h2>{cadre.title}</h2>
+                    <p>{cadre.description}</p>
+                  </div>
                 </div>
               )
           )}
