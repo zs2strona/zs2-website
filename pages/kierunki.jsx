@@ -14,50 +14,29 @@ export default function Kierunki() {
       <main className={`main-kierunki ${inter.className}`}>
         <Kier
           title="Technikum:"
-          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ullam
-              veniam pariatur sapiente temporibus vel quae provident, nesciunt autem
-              in quod ex perspiciatis iusto earum eligendi debitis fugiat corrupti
-              rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-              ullam veniam pariatur sapiente temporibus vel quae provident, nesciunt
-              autem in quod ex perspiciatis iusto earum eligendi debitis fugiat
-              corrupti rerum!"
           box="main-kierunki__box-1"
           link="technikum"
-          image1="/imk1.png"
-          image2="/imk2.png"
-          image3="/imk3.png"
+          image1="/imt1.png"
+          image2="/imt2.png"
+          image3="/imt3.png"
         />
 
         <Kier
           title="Liceum Ogólnokształcące:"
-          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ullam
-              veniam pariatur sapiente temporibus vel quae provident, nesciunt autem
-              in quod ex perspiciatis iusto earum eligendi debitis fugiat corrupti
-              rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-              ullam veniam pariatur sapiente temporibus vel quae provident, nesciunt
-              autem in quod ex perspiciatis iusto earum eligendi debitis fugiat
-              corrupti rerum!"
           box="main-kierunki__box-2"
           link="liceum"
-          image1="/imk1.png"
-          image2="/imk2.png"
-          image3="/imk3.png"
+          image1="/iml1.jpg"
+          image2="/iml2.jpg"
+          image3="/iml3.jpg"
         />
 
         <Kier
           title="Szkoła branżowa I stopnia:"
-          content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ullam
-              veniam pariatur sapiente temporibus vel quae provident, nesciunt autem
-              in quod ex perspiciatis iusto earum eligendi debitis fugiat corrupti
-              rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-              ullam veniam pariatur sapiente temporibus vel quae provident, nesciunt
-              autem in quod ex perspiciatis iusto earum eligendi debitis fugiat
-              corrupti rerum!"
           box="main-kierunki__box-3"
           link="szkola-branzowa"
-          image1="/imk1.png"
-          image2="/imk2.png"
-          image3="/imk3.png"
+          image1="/imt1.png"
+          image2="/imt2.png"
+          image3="/imt3.png"
         />
       </main>
 
@@ -66,7 +45,7 @@ export default function Kierunki() {
   )
 }
 
-export function Kier({ title, content, box, link, image1, image2, image3 }) {
+export function Kier({ title, box, link, image1, image2, image3 }) {
   return (
     <section className="main-kierunki__section">
       <Image
@@ -97,10 +76,10 @@ export function Kier({ title, content, box, link, image1, image2, image3 }) {
 
       <div className={`main-kierunki__section--box ${box}`}>
         <Link href={`/${link}`}>
-          <button className="main-kierunki__button">Sprawdź</button>
+          <button className="main-kierunki__button">
+            Sprawdź <span>kierunki</span> kształcenia
+          </button>
         </Link>
-
-        <p>{content}</p>
       </div>
     </section>
   )

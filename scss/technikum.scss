@@ -29,7 +29,7 @@ body {
     }
     &--border {
       border: $yellow solid 1px;
-      height: 1850px;
+      height: 1930px;
     }
   }
 
@@ -55,6 +55,10 @@ body {
     }
     &__button {
       font-size: 17px;
+    }
+    ul {
+      padding: 0px;
+      padding-left: 15px;
     }
   }
   .technikum-post--programer {

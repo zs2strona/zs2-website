@@ -31,7 +31,7 @@ export default function Technikum() {
               </div>
 
               <Image
-                src="/Placeholder.png"
+                src="/kierunki-images/programista.jpg"
                 className="technikum-post__image"
                 alt=""
                 width="550"
@@ -39,19 +39,31 @@ export default function Technikum() {
               />
 
               <p>
-                Przedmiot rozszerzony: matematyka Języki obce: język angielski, język
-                niemiecki/hiszpański Przygotowanie do egzaminu zawodowego w
-                kwalifikacjach: INF.03. oraz INF.04. W ramach Akademii MikroTika nasi
-                uczniowie będą mogli zdobywać dodatkowe certyfikowane i uznawane na całym
-                świecie umiejętności. Jako absolwent kończący szkołę w zawodzie technik
-                programista będziesz potrafił: tworzyć strony internetowe przy użyciu
-                HTML, CSS, JS, PHP, JavaScript i MySQL. programować w językach: C++, C#,
-                Python, Java, stosować język SQL w programowaniu aplikacji bazodanowych;
-                budować witryny i aplikacje mobilne na IOS, Android z wykorzystaniem API
-                oparciu o rozwiązania chmurowe, tworzyć i wdrażać grafikę komputerową oraz
-                multimedia w swoich własnych projektach, skalować oraz drukować modele 3D
-                projektować, programować zaawansowane aplikacje desktopowe, webowe i
-                mobilne. Kierunek pod patronatem politechniki rzeszowskiej.
+                Zostań programistą, naucz się logicznego myślenia, stosuj
+                matematykę i grafikę zarazem. Twórz oprogramowanie, strony
+                internetowe i aplikacje pod Androida, IOS. Wyżyj się
+                intelektualnie, poznaj zawód przyszłości, obcuj z najnowszymi
+                technologiami i trendami IT. Zdobądź certyfikat Akademii
+                MikroTika!!! Tu czeka Cię dużo ciekawej pracy praktycznej -
+                projektowej, programowanie, poznawanie oprogramowania,
+                projektowanie grafiki komputerowej.
+                <ul>
+                  <li>
+                    Przedmioty wybrane do punktacji: język polski, matematyka,
+                    język angielski i fizyka
+                  </li>
+                  <li> Przedmiot rozszerzony: matematyka</li>
+                  <li>
+                    Języki obce: język angielski, język niemiecki/hiszpański
+                  </li>
+                  <li>
+                    Przedmiot dodatkowy: projektowanie i programowanie urządzeń
+                  </li>
+                  <li>
+                    Wysoki poziom nauczania i dobre przygotowanie do egzaminu
+                    zawodowego w kwalifikacjach - INF.03, INF.04
+                  </li>
+                </ul>
               </p>
 
               <Link href="https://www.facebook.com/zs2lancut/posts/pfbid02WL6iAZh12CmpwvkZLa6ZoPRrgSxSz7L7jhtqdNUEPScRHyewHXxgKcDG9kW5jfpvl?fbclid=IwAR3uEi8JVs7pxje51xyESBVuu1wazWiiKyCvompbOEGvl0OkfXW6cUz9tx8">
@@ -80,21 +92,30 @@ export default function Technikum() {
               />
 
               <p>
-                Przedmiot rozszerzony: matematyka Języki obce: język angielski, język
-                niemiecki/hiszpański Przygotowanie do egzaminu zawodowego w
-                kwalifikacjach: INF.02 oraz INF.03. W trakcie nauki będziesz miał
-                możliwość uzyskania dodatkowych Certyfikatów, m.in.: W ramach Akademii
-                MikroTika nasi uczniowie będą mogli zdobywać dodatkowe certyfikowane i
-                uznawane na całym świecie umiejętności zawodowe. Absolwent kierunku
-                Technik Informatyk będzie wykonywał zadania: Montaż oraz eksploatacja
-                komputera i urządzeń peryferyjnych, naprawa i diagnostyka usterek sprzętu
-                komputerowego, projektowanie i wykonywanie lokalnej sieci komputerowej,
-                administrowanie sieciowymi systemami operacyjnymi, projektowanie baz
-                danych i administrowania bazami, ponfigurowanie urządzeń sieciowych,
-                serwerów oraz routerów, tworzenie i administrowania stronami WWW, tworzyć
-                aplikacje w wybranych językach, w szczególności C++ oraz JAVA, tworzyć
-                strony internetowe z użyciem HTML, CSS oraz PHP. Konwertować strony CMS
-                Joomla i WordPress.
+                Zostań informatykiem - to ciekawy, twórczy, prestiżowy i bardzo
+                dobrze opłacany zawód dla ludzi dynamicznych i pełnych
+                pomysłowości. Przygotuj się - jako przyszły specjalista do
+                realizacji zadań w tym zawodzie. Zdobądź certyfikat Akademii
+                MikroTika!!! Informatyka zamieszkała we wszystkich sferach
+                naszego życia od nauki poprzez przemysł, medycynę, a skończywszy
+                na rozrywce.
+                <ul>
+                  <li>
+                    Przedmioty wybrane do punktacji: język polski, matematyka,
+                    język angielski i fizyka
+                  </li>
+                  <li>Przedmiot rozszerzony: matematyka</li>
+                  <li>
+                    Języki obce: język angielski, język niemiecki/hiszpański
+                  </li>
+                  <li>
+                    Przedmiot dodatkowy: projektowanie i programowanie urządzeń
+                  </li>
+                  <li>
+                    Wysoki poziom nauczania i dobre przygotowanie do egzaminu
+                    zawodowego w kwalifikacjach - INF.02, INF.03
+                  </li>
+                </ul>
               </p>
 
               <Link href="https://www.facebook.com/zs2lancut/posts/pfbid02ePBzz93ypGgckmaPT7to2SnbFspEkpvQA1ToqDrtn8hrP5ai2KSk88kR81gpdFywl?fbclid=IwAR2IDXYi5X4oKt7cEFJYlza6zBAdpsrMzFC-o6_9ozZgVJhIcqQKwyJHMYY">
@@ -127,18 +148,29 @@ export default function Technikum() {
               />
 
               <p>
-                Przedmiot rozszerzony: matematyka Języki obce: język angielski, język
-                niemiecki/hiszpański przygotowanie do egzaminu zawodowego w kwalifikacji:
-                TLO. 03. Najnowocześniejsza szkolna hala serwisowa - dwa
-                turbowentylatorowe silniki CF6-50 (stosowane wcześniej m.in. w samolotach
-                Boeing 747), waga ponad 4 tony; specjalistyczne oprzyrządowanie i
-                dokumentacja serwisowa; pracownie wyposażone w nowoczesny sprzęt i
-                specjalistyczne narzędzia niezbędne do wykonywania procedur serwisowych.
-                samolot Liberty XL2 na wypożyczeniu z OKL do nauki budowy płatowca.ZS2
-                Łańcut ośrodkiem certyfikacji L2 - licencji na mechanika szybowców,
-                motoszybowców i małych samolotów do 1200 kg. Organizacjach obsługowych
-                lotnictwa cywilnego, certyfikowanych zgodnie ze standardami europejskiego
-                prawa lotniczego. Klasa pod patronatem podkarpackiej firmy EME Aero.
+                Zostań mechanikiem lotniczym, pracuj z najnowocześniejszą
+                technologia lotniczą z użyciem najbardziej zaawansowanych
+                rozwiązań do naprawy i diagnostyki samolotów.
+                <br /> Obcuj z najwyższymi standardami kultury technicznej.
+                Zostań członkiem zespołu profesjonalistów z różnych dziedzin i
+                branż, który będzie naprawiał samoloty.
+                <ul>
+                  <li>
+                    Przedmioty wybrane do punktacji: język polski, matematyka,
+                    język angielski i fizyka
+                  </li>
+                  <li>Przedmiot rozszerzony: matematyka</li>
+                  <li>
+                    Języki obce: język angielski, język niemiecki/hiszpański
+                  </li>
+                  <li>
+                    Przedmiot dodatkowy: projektowanie i programowanie urządzeń
+                  </li>
+                  <li>
+                    Wysoki poziom nauczania i dobre przygotowanie do egzaminu
+                    zawodowego w kwalifikacji - TLO. 03
+                  </li>
+                </ul>
               </p>
 
               <Link href="https://www.facebook.com/zs2lancut/posts/pfbid0w1JHHkPejXceY2GKoTJDRHtEatWq4iX4n1ZFJyYE2srkNUhwqYUqakmNJr2r5kcnl?fbclid=IwAR29eq3ZAbO2GRzIAeuCrRC3j6DE4qNL4uW74ycCEXEDnVQ56QiY5aCwx3E">
@@ -167,17 +199,27 @@ export default function Technikum() {
               />
 
               <p>
-                Przedmiot rozszerzony: matematyka Języki obce: język angielski, język
-                niemiecki/hiszpański. Przygotowanie do egzaminu zawodowego w
-                kwalifikacjach:ELM.03. oraz ELM.06. Absolwent kierunku Technik Mechatronik
-                będzie umiał między innymi: budować i uruchamiać urządzenia elektryczne,
-                pneumatyczne i hydrauliczne, projektować 3D, programować i obsługiwać
-                nowoczesne urządzenia mechatroniczne programować sterowniki PLC. Absolwent
-                mechatroniki jest przygotowany do wykonywania zadań zawodowych związanych
-                z: projektowaniem, obsługiwaniem urządzeń i systemów mechatronicznych,
-                projektowaniem, konstruowaniem, montażem oraz demontażem urządzeń i
-                systemów mechatronicznych, programowaniem, użytkowaniem, diagnozowaniem
-                oraz naprawami nowoczesnego sprzętu.
+                Zostań mechatronikiem. Majsterkujesz? Interesujesz się techniką?
+                Zgłębiasz tajniki działania nowoczesnych urządzeń i ich
+                programowania? Fascynujesz się nowymi technologiami? - dołącz do
+                nas i naucz się łączyć dziedziny mechaniki, elektroniki,
+                robotyki i informatyki.
+                <ul>
+                  <li>
+                    Przedmioty wybrane do punktacji: język polski, matematyka,
+                    język angielski i fizyka
+                  </li>
+                  <li>Przedmiot rozszerzony: matematyka</li>
+                  <li>
+                    Języki obce: język angielski, język niemiecki/hiszpański
+                  </li>
+                  <li>Przedmiot dodatkowy: projektowanie i programowanie</li>
+                  urządzeń
+                  <li>
+                    Wysoki poziom nauczania i dobre przygotowanie do egzaminu
+                    zawodowego w kwalifikacjach - ELM.03, ELM.06
+                  </li>
+                </ul>
               </p>
 
               <Link href="https://www.facebook.com/zs2lancut/posts/pfbid021Zb1gCrFPV4gr5D2XFQcHv7RTggjoNnPpcLEZLcKXmzekewTqLwXiKa41fK3QuTZl?fbclid=IwAR1RIK3banRxIoMNYfIOUY_3ZaDHXJ5vLnw9FKNmA1A1dO7k3ioPfUPq83o">

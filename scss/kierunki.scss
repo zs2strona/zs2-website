@@ -43,12 +43,7 @@ body {
     max-width: $maxWidth;
     @include setFlex(column, none);
     z-index: 2;
-    p {
-      font-size: 18px;
-      @media all and (width <= 800px) {
-        font-size: 15px;
-      }
-    }
+
     @media all and (width <= 440px) {
       max-width: none;
       width: 100%;
@@ -66,14 +61,17 @@ body {
     top: calc(300vh - 120px);
   }
   &__button {
-    min-width: 280px;
-    min-height: 45px;
+    min-width: 470px;
+    min-height: 65px;
     @extend %buttonGeneral;
-    color: $yellow;
-    font-size: 20px;
+    color: $white;
+    font-size: 30px;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
+    }
+    & span {
+      color: $yellow;
     }
 
     //* Media query
