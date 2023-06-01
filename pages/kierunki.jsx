@@ -34,9 +34,9 @@ export default function Kierunki() {
           title="Szkoła branżowa I stopnia:"
           box="main-kierunki__box-3"
           link="szkola-branzowa"
-          image1="/imt1.png"
+          image1="/imt3.png"
           image2="/imt2.png"
-          image3="/imt3.png"
+          image3="/imt1.png"
         />
       </main>
 
