@@ -35,22 +35,39 @@ export default function Liceum() {
             />
 
             <p>
-              Przedmiot rozszerzony: matematyka, geografia, język angielski.
-              Języki obce: język angielski, język hiszpański. Absolwent tej
-              klasy Zdobędziesz wykształcenie ogólne i umiejętności w zakresie
-              szkolenia podstawowego obowiązującego w Polskich Siłach Zbrojnych
-              RP i w innych formacjach mundurowych. Otrzymasz dodatkowe punkty w
-              postępowaniu kwalifikacyjnym do policji. Uzyskasz dodatkowe punkty
-              rankingowe w rekrutacji na wyższe uczelnie wojskowe i policyjne.
-              Będziesz mógł aplikować do postępowania rekrutacyjnego do pracy w
-              Policji oraz innych służbach odpowiedzialnych za porządek
-              publiczny a także w firmach i instytucjach z sektora ochrony osób
-              i mienia. będziesz mógł kontynuować edukację w cywilnych szkołach
-              i uczelniach na kierunkach z zakresu bezpieczeństwo publiczne oraz
-              uczelniach wojskowych i Wyższej Szkoły Policji. Klasa mundurowa
-              uczy odpowiedzialności, patriotyzmu i szacunku do drugiego
-              człowieka.
+              Zostań policjantem, jeżeli chcesz rozwijać pasje i
+              zainteresowania. Profil policyjny oferuje wszechstronne szkolenie,
+              które pozwoli Ci zdobyć niezbędne umiejętności i wiedzę związane z
+              pracą w służbie policyjnej. Będziesz uczyć się prawa, procedur
+              karnych, technik śledczych oraz wielu przydatnych rzeczy w życiu
+              codziennym. To daje Ci solidne fundamenty, które mogą przyczynić
+              się do osiągnięcia sukcesu w przyszłej karierze w policji.
+              <ul>
+                <li>
+                  Przedmioty wybrane do punktacji: język polski, matematyka,
+                  język angielski, geografia
+                </li>
+                <li>
+                  Przedmiot rozszerzony: matematyka, geografia, język angielski
+                </li>
+                <li>Języki obce: język angielski, język hiszpański</li>
+                <li>
+                  Przedmioty dodatkowe: bezpieczeństwo narodowe, logistyka
+                  ekonomiczna, edukacja wojskowa, wiedza o policji
+                </li>
+                <li>
+                  Wysoki poziom nauczania i dobre przygotowanie do pracy w
+                  służbach mundurowych
+                </li>
+                <li>
+                  Otrzymasz dodatkowe punkty w postępowaniu kwalifikacyjnym do
+                  policji
+                </li>
+              </ul>
             </p>
+            <Link href="https://www.facebook.com/zs2lancut/posts/pfbid06KnEFyUSfcpbhLczzSyxHNc7Wds4BR5FWdhMuhQb3rBbrANKQkXw68tUE5NLEZDfl?fbclid=IwAR0MgK_t7cqyKCduU4NZuhh3CqXzrHBax99DqDqDwsZR58Y3_QZp7ZV7ops">
+              <h3 className="Link">Zobacz wiecej!</h3>
+            </Link>
           </section>
 
           <div className="liceum-main__container--border" />
@@ -75,22 +92,39 @@ export default function Liceum() {
             />
 
             <p>
-              Przedmiot rozszerzony: matematyka, geografia, język angielski.
-              Języki obce: język angielski, język hiszpański. Jako absolwent tej
-              klasy zdobędziesz wykształcenie ogólne i umiejętności w zakresie
-              szkolenia podstawowego obowiązującego w Polskich Siłach Zbrojnych
-              RP i w innych formacjach mundurowych. Uzyskasz dodatkowe punkty
-              rankingowe w rekrutacji na wyższe uczelnie wojskowe i policyjne.
-              Będziesz preferencyjnie traktowany podczas naboru do Wojsk Obrony
-              Terytorialnej i innych rodzajów służb wojskowych. Znajdziesz
-              zatrudnienie we wszelkich instytucjach mundurowych, prawnych,
-              penitencjarnych, administracji państwowej i publicznej, inspekcji
-              i straży. Będziesz mógł kontynuować edukację w cywilnych szkołach
-              i uczelniach na kierunkach z zakresu bezpieczeństwo publiczne oraz
-              uczelniach wojskowych i Wyższej Szkoły Policji. Klasa mundurowa
-              uczy odpowiedzialności, patriotyzmu i szacunku do drugiego
-              człowieka.
+              Zostań żołnierzem, jeżeli chcesz spożytkować swoją energię i
+              zapał, rozwijać pasje i zainteresowania, kształtować siłę i
+              sprawność, pomagać potrzebującym i czuć się odpowiedzialnym za
+              innych. Poprzez udział w ćwiczeniach poligonowych, zajęciach
+              survivalowych, szkoleniu strzeleckim i pierwszej pomocy nabędziesz
+              pewności siebie, przełamiesz wewnętrzne bariery, przeżyjesz
+              przygodę i poznasz niezwykłych ludzi.
+              <ul>
+                <li>
+                  Przedmioty wybrane do punktacji: język polski, matematyka,
+                  język angielski, geografia
+                </li>
+                <li>
+                  Przedmiot rozszerzony: matematyka, geografia, język angielski
+                </li>
+                <li>Języki obce: język angielski, język hiszpański</li>
+                <li>
+                  Przedmioty dodatkowe: bezpieczeństwo narodowe, logistyka
+                  ekonomiczna, edukacja wojskowa, wiedza o policji
+                </li>
+                <li>
+                  Wysoki poziom nauczania i dobre przygotowanie do pracy w
+                  służbach mundurowych
+                </li>
+                <li>
+                  Będziesz preferencyjnie traktowany podczas naboru do Wojsk
+                  Obrony Terytorialnej i innych rodzajów służb wojskowych
+                </li>
+              </ul>
             </p>
+            <Link href="https://www.facebook.com/zs2lancut/posts/pfbid06KnEFyUSfcpbhLczzSyxHNc7Wds4BR5FWdhMuhQb3rBbrANKQkXw68tUE5NLEZDfl?fbclid=IwAR0MgK_t7cqyKCduU4NZuhh3CqXzrHBax99DqDqDwsZR58Y3_QZp7ZV7ops">
+              <h3 className="Link">Zobacz wiecej!</h3>
+            </Link>
           </section>
         </div>
 

@@ -27,6 +27,10 @@ body {
     img {
       object-fit: cover;
     }
+    ul {
+      padding: 0px;
+      padding-left: 15px;
+    }
 
     &--police,
     &--military {
@@ -45,7 +49,7 @@ body {
       }
     }
     &--border {
-      height: 800px;
+      height: 960px;
       border: solid $yellow 1px;
     }
   }

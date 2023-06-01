@@ -31,7 +31,7 @@ export default function Technikum() {
               </div>
 
               <Image
-                src="/kierunki-images/programista.jpg"
+                src="/kierunki-images/programista.png"
                 className="technikum-post__image"
                 alt=""
                 width="550"
@@ -84,7 +84,7 @@ export default function Technikum() {
               </div>
 
               <Image
-                src="/Placeholder.png"
+                src="/kierunki-images/informatyk.JPG"
                 className="technikum-post__image"
                 alt=""
                 width="550"
