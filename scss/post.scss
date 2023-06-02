@@ -22,8 +22,9 @@ body {
     }
 
     @media all and (width <= 730px) {
-      display: none;
-
+      &--function {
+        display: none;
+      }
       &--query {
         margin: 0px;
         width: 100%;
@@ -52,6 +53,10 @@ body {
       width: auto;
       height: auto;
       border-radius: 5px;
+
+      @media all and (width <= 450px) {
+        width: 100%;
+      }
     }
   }
   &__title {

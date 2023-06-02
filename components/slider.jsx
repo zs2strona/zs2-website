@@ -58,7 +58,7 @@ export default function Slider({ mainImage, images }) {
   }
 
   return (
-    <>
+    <div className="main-post__slider--function">
       <Image
         src="/slider-left.svg"
         alt="poprzedni"
@@ -96,6 +96,6 @@ export default function Slider({ mainImage, images }) {
         height="45"
         className="control_next"
       />
-    </>
+    </div>
   )
 }
