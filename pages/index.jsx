@@ -15,8 +15,8 @@ export default function Home() {
           src="/movie.mp4"
           autoPlay="autoplay"
           playsInline="playsinline"
-          loop="true"
-          muted="true"
+          loop={true}
+          muted={true}
         />
 
         <footer className="main-page__footer">

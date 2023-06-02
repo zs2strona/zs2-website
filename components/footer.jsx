@@ -17,7 +17,7 @@ export default function Footer() {
             <p>
               tel.: 17 225 25 82
               <br />
-              zs2@powiatlancut.pl
+              sekretariat@zs2lancut.pl
             </p>
 
             <p>

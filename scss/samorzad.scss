@@ -125,4 +125,69 @@ body {
     text-align: center;
     margin: 1%;
   }
+
+  //* Media query
+  @media all and (width <= 1360px) {
+    .main-container {
+      flex-wrap: wrap;
+    }
+    .main-guards {
+      flex-wrap: wrap;
+    }
+    .main-footer img {
+      width: 100%;
+      height: auto;
+    }
+    .main-discounts__button {
+      font-size: 20px;
+      width: 50vw;
+    }
+  }
+  @media all and (width <= 450px) {
+    .main-container img {
+      margin-top: 20px;
+    }
+    .main-names {
+      border: none;
+      text-align: center;
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .main-guards-title {
+      font-size: 20px;
+      text-align: center;
+    }
+    .main-guards img {
+      margin-top: 20px;
+    }
+    .main-discounts h2 {
+      font-size: 20px;
+    }
+    .main-footer {
+      h1 {
+        font-size: 22px;
+        text-align: center;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+    .main-header {
+      h1 {
+        font-size: 28px;
+        text-align: center;
+      }
+    }
+  }
+  @media all and (width <= 260px) {
+    .main-container,
+    .main-guards img {
+      width: 100%;
+    }
+    .main-guards-title h1 {
+      font-size: 20px;
+    }
+  }
 }

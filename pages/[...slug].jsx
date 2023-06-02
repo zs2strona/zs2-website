@@ -17,7 +17,7 @@ export default function Post({ post }) {
     <>
       <Layout title={post.title} />
 
-      <main className={`main-post ${inter.className}`} key={post.slug}>
+      <article className={`main-post ${inter.className}`} key={post.slug}>
         <p className="main-post__date">
           <span>{post.date}</span>
         </p>
@@ -40,12 +40,7 @@ export default function Post({ post }) {
 
         {post.category === 'aktualnosci' && (
           <figure className="main-post__slider--query">
-            <Image
-              src={post.mainImage.url}
-              alt={post.title}
-              width={600}
-              height={600}
-            />
+            <Image src={post.mainImage.url} alt={post.title} width={600} height={600} />
 
             {post.images.map((image, i) => (
               <Image
@@ -82,7 +77,7 @@ export default function Post({ post }) {
         <button className="main-post__return" onClick={() => router.back()}>
           Wróć do bloga!
         </button>
-      </main>
+      </article>
 
       <Footer />
     </>
