@@ -50,7 +50,7 @@ export default function Aktualnosci({ posts }) {
             </p>
           </div>
 
-          {posts.slice(3, 10).map(
+          {posts.slice(3, 12).map(
             (post) =>
               post.category === 'aktualnosci' && (
                 <div key={post.slug} className="content__item">
@@ -69,7 +69,7 @@ export default function Aktualnosci({ posts }) {
           )}
 
           {open &&
-            posts.slice(10).map(
+            posts.slice(12).map(
               (post) =>
                 post.category === 'aktualnosci' && (
                   <div key={post.slug} className="content__item">
@@ -105,7 +105,11 @@ export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
       query {
-        posts(first: 1000) {
+        posts(
+          first: 1000
+          orderBy: date_DESC
+          where: { category: aktualnosci }
+        ) {
           title
           slug
           date

@@ -69,14 +69,14 @@ export default function Slider({ mainImage, images }) {
       <div className="slider" ref={sliderRef}>
         <ul className="slider__list">
           <li>
-            <Link href={mainImage}>
+            <Link href={mainImage} target="_blank">
               <Image src={mainImage} alt={mainImage} width="600" height="600" />
             </Link>
           </li>
 
           {images.map((image, i) => (
             <li key={i}>
-              <Link href={image.url}>
+              <Link href={image.url} target="_blank">
                 <Image
                   src={image.url}
                   alt={image.url}

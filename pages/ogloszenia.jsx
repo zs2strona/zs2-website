@@ -63,7 +63,7 @@ export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
       query {
-        posts(first: 1000) {
+        posts(first: 1000, where: { category: ogloszenia }) {
           title
           slug
           category

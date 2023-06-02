@@ -26,7 +26,7 @@ export default function Post({ post }) {
           {(post.category === 'aktualnosci' && (
             <Slider images={post.images} mainImage={post.mainImage.url} />
           )) || (
-            <Link href={post.mainImage.url}>
+            <Link href={post.mainImage.url} target="_blank">
               <Image
                 className="main-post__slider--image"
                 src={post.mainImage.url}
@@ -40,7 +40,12 @@ export default function Post({ post }) {
 
         {post.category === 'aktualnosci' && (
           <figure className="main-post__slider--query">
-            <Image src={post.mainImage.url} alt={post.title} width={600} height={600} />
+            <Image
+              src={post.mainImage.url}
+              alt={post.title}
+              width={600}
+              height={600}
+            />
 
             {post.images.map((image, i) => (
               <Image
