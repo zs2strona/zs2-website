@@ -6,10 +6,11 @@ body {
 
 //* Main
 .container {
+  margin: auto;
+  max-width: $maxWidth;
+
   .main-header {
-    margin: auto;
     margin-top: 120px;
-    max-width: $maxWidth;
     height: auto;
     @include setFlex(column);
     font-size: 25px;
@@ -20,10 +21,9 @@ body {
   .main-container {
     padding-top: 50px;
     height: auto;
-    max-width: $maxWidth;
+    width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: center;
+    @include setFlex(row, center, none);
     gap: 2%;
     border-top: solid 3px $yellow;
     border-bottom: solid 3px $yellow;
@@ -33,9 +33,8 @@ body {
     }
   }
   .main-names {
-    margin: auto;
     margin-top: 50px;
-    max-width: $maxWidth;
+    width: 100%;
     height: auto;
     @include setFlex(column);
     font-size: 20px;
@@ -50,10 +49,8 @@ body {
   .main-guards-title {
     padding-top: 5%;
     height: auto;
-    max-width: $maxWidth;
-    margin: auto;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    @include setFlex(row, center, none);
     gap: 2%;
     border-top: solid 3px $yellow;
     border-bottom: solid 3px $yellow;
@@ -63,9 +60,8 @@ body {
     }
   }
   .main-guards {
-    margin: auto;
     margin-top: 50px;
-    max-width: $maxWidth;
+    width: 100%;
     height: auto;
     @include setFlex(row);
     font-size: 20px;
@@ -79,9 +75,8 @@ body {
     }
   }
   .main-discounts {
-    margin: auto;
     margin-top: 50px;
-    max-width: $maxWidth;
+    width: 100%;
     height: auto;
     @include setFlex(column);
     font-size: 20px;
@@ -110,9 +105,8 @@ body {
     }
   }
   .main-footer {
-    margin: auto;
     margin-top: 5%;
-    max-width: $maxWidth;
+    width: 100%;
     height: auto;
     @include setFlex(column);
     font-size: 25px;

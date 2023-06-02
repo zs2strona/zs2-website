@@ -7,13 +7,14 @@ export default function Availability() {
   const [isUpOn, setIsUpOn] = useState(false)
   const [isDwOn, setIsDwOn] = useState(false)
 
-  function Reset() {
-    if (isCnOn == true) ContrastClass()
-    if (isUpOn == true) UpClass()
-    if (isDwOn == true) DwClass()
-    setIsCnOn(!isCnOn && false)
-    setIsUpOn(!isUpOn && false)
-    setIsDwOn(!isDwOn && false)
+  const Reset = () => {
+    isCnOn && ContrastClass()
+    isUpOn && UpClass()
+    isDwOn && DwClass()
+
+    setIsCnOn(false)
+    setIsUpOn(false)
+    setIsDwOn(false)
   }
 
   const ContrastClick = () => {
