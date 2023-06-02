@@ -19,6 +19,7 @@ export default function Kierunki() {
           image1="/imt1.png"
           image2="/imt2.png"
           image3="/imt3.png"
+          arrow={true}
         />
 
         <Kier
@@ -28,6 +29,7 @@ export default function Kierunki() {
           image1="/iml1.jpg"
           image2="/iml2.jpg"
           image3="/iml3.jpg"
+          arrow={true}
         />
 
         <Kier
@@ -37,6 +39,7 @@ export default function Kierunki() {
           image1="/imt3.png"
           image2="/imt2.png"
           image3="/imt1.png"
+          arrow={false}
         />
       </main>
 
@@ -45,7 +48,7 @@ export default function Kierunki() {
   )
 }
 
-export function Kier({ title, box, link, image1, image2, image3 }) {
+export function Kier({ title, box, link, image1, image2, image3, arrow }) {
   return (
     <section className="main-kierunki__section">
       <Image
@@ -80,6 +83,13 @@ export function Kier({ title, box, link, image1, image2, image3 }) {
             Sprawdź <span>kierunki</span> kształcenia
           </button>
         </Link>
+
+        {arrow && (
+          <div className="main-kierunki__arrow">
+            <Image src="/Arrow.png" alt="arrow" width="20" height="20" />
+            <Image src="/Arrow.png" alt="arrow" width="20" height="20" />
+          </div>
+        )}
       </div>
     </section>
   )

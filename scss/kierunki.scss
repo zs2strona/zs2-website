@@ -32,7 +32,7 @@ body {
     h1 {
       font-size: 42px;
       @media all and (width <= 440px) {
-        font-size: 28px;
+        font-size: 26px;
       }
     }
   }
@@ -43,6 +43,7 @@ body {
     max-width: $maxWidth;
     @include setFlex(column, none);
     z-index: 2;
+    gap: 70px;
 
     @media all and (width <= 440px) {
       max-width: none;
@@ -60,6 +61,28 @@ body {
   &__box-3 {
     top: calc(300vh - 120px);
   }
+  @keyframes kierunki-arrow {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  &__arrow {
+    animation: kierunki-arrow 6s ease-in-out infinite;
+    @include setFlex(column);
+
+    img {
+      margin-top: -25px;
+      width: 20px;
+      height: auto;
+      rotate: 90deg;
+    }
+  }
   &__button {
     min-width: 470px;
     min-height: 65px;
@@ -67,8 +90,10 @@ body {
     color: $white;
     font-size: 30px;
 
-    &:hover {
-      transform: scale(1.05);
+    @media all and (width >= 440px) {
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     & span {
       color: $yellow;
