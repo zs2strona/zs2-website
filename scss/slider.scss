@@ -13,27 +13,26 @@
     padding: 0;
     list-style: none;
 
-    li {
-      img {
-        object-fit: contain;
-        max-width: 700px;
-        max-height: 500px;
-      }
+    li img {
+      object-fit: contain;
+      max-width: 900px;
+      max-height: 500px;
     }
   }
 }
-.control_prev,
-.control_next {
+.control {
+  width: auto;
   height: auto;
   position: absolute;
   cursor: pointer;
   z-index: 2;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-.control_prev {
-  left: -40px;
-}
-.control_next {
-  right: -80px;
+
+  &__prev {
+    left: -40px;
+  }
+  &__next {
+    right: -80px;
+  }
 }

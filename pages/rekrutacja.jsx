@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Rekrutacja() {
   return (
     <>
-      <Layout title="Rekrutacja" />
+      <Layout
+        title="Rekrutacja"
+        description="Dołączenie do Naszej Szkoły, może i bedzie towją Najlepszą decyzją!!"
+      />
 
       <main className={`main-rekrutacja ${inter.className}`}>
         <div className="main-rekrutacja__title">

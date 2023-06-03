@@ -14,7 +14,10 @@ export default function Aktualnosci({ posts }) {
 
   return (
     <>
-      <Layout title="Aktualności" />
+      <Layout
+        title="Aktualności"
+        description="Żyjemy wszystkimi momentami naszej szkoły. Cenimy osiągnięcia i jesteśmy dumni z tego, co robimy. Rozwijamy nasze pasje i wygrywamy w konkursach."
+      />
 
       <main className={`main-aktualnosci ${inter.className}`}>
         <div className="main-aktualnosci__text">
@@ -105,11 +108,7 @@ export async function getStaticProps() {
   const { data } = await client.query({
     query: gql`
       query {
-        posts(
-          first: 1000
-          orderBy: date_DESC
-          where: { category: aktualnosci }
-        ) {
+        posts(first: 1000, orderBy: date_DESC, where: { category: aktualnosci }) {
           title
           slug
           date

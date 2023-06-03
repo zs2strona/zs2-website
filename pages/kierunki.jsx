@@ -9,7 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Kierunki() {
   return (
     <>
-      <Layout title="Kierunki" />
+      <Layout
+        title="Kierunki"
+        description="Technik Programista, Technik Mechanik Lotniczy, Technik Informatyk, Technik Mechatronik, Liceum Mundurowe, Elektormechanik Samochodowy, Ślusarz"
+      />
 
       <main className={`main-kierunki ${inter.className}`}>
         <Kier

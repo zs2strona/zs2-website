@@ -36,10 +36,10 @@ export default function Slider({ mainImage, images }) {
       sliderUl.style.transform = `translateX(-${currentIndex * slideWidth}px)`
     }
 
-    const prevButton = document.querySelector('.control_prev')
+    const prevButton = document.querySelector('.control__prev')
     prevButton.addEventListener('click', moveLeft)
 
-    const nextButton = document.querySelector('.control_next')
+    const nextButton = document.querySelector('.control__next')
     nextButton.addEventListener('click', moveRight)
 
     slideRefs.current = Array.from(sliderItems)
@@ -64,7 +64,7 @@ export default function Slider({ mainImage, images }) {
         alt="poprzedni"
         width="40"
         height="45"
-        className="control_prev"
+        className="control control__prev"
       />
       <div className="slider" ref={sliderRef}>
         <ul className="slider__list">
@@ -94,7 +94,7 @@ export default function Slider({ mainImage, images }) {
         alt="nastepny"
         width="40"
         height="45"
-        className="control_next"
+        className="control control__next"
       />
     </div>
   )

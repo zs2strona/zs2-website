@@ -4,15 +4,17 @@ import Availability from '@/components/availability'
 import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const descriptionTemplate =
+  'Z nami rozwiniesz swoje zainteresowania, posiądziesz wiedzę i umiejętności. Wszystko pod okiem najlepszych nauczycieli i wspaniałych kolegów, którzy zawsze Ci doradzą oraz pomogą z każdym problemem.'
 
-export const Layout = ({ children, title }) => {
+export const Layout = ({ children, title, description }) => {
   return (
     <>
       <Head>
         <title>{`${title} | Zespół Szkoł Nr 2 im. Jana Kochanowskiego w Łańcucie`}</title>
         <meta
           name="description"
-          content="Z nami rozwiniesz swoje zainteresowania, posiądziesz wiedzę i umiejętności. Wszystko pod okiem najlepszych nauczycieli i wspaniałych kolegów, którzy zawsze Ci doradzą oraz pomogą z każdym problemem."
+          content={description ? description : descriptionTemplate}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

@@ -13,7 +13,7 @@
 @use './samorzad.scss' as *;
 @use './blog.scss' as *;
 @use './post.scss' as *;
-@use '../components/slider.scss' as *;
+@use './slider.scss' as *;
 
 //* General Settings
 body {
@@ -111,14 +111,24 @@ a {
   gap: 100px;
 
   h1 {
-    font-size: 52px;
-    transform: rotate(20deg);
+    font-size: 64px;
+    transform: rotate(15deg);
   }
   h3 {
-    font-size: 28px;
+    font-size: 32px;
     transform: rotate(-5deg);
   }
   span {
     color: $yellow;
+  }
+  @media all and (width <= 430px) {
+    h1 {
+      font-size: 38px;
+      transform: rotate(0deg);
+    }
+    h3 {
+      font-size: 28px;
+      transform: rotate(0deg);
+    }
   }
 }
