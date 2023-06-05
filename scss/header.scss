@@ -159,19 +159,21 @@
     }
 
     //* Link hover
-    a::before {
-      content: '';
-      bottom: -2px;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      scale: 0 1;
-      background-color: $yellow;
-      transform-origin: left;
-      transition: 0.4s;
-    }
-    a:hover::before {
-      scale: 1;
+    @media all and (width >= 820px) {
+      a::before {
+        content: '';
+        bottom: -2px;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        scale: 0 1;
+        background-color: $yellow;
+        transform-origin: left;
+        transition: 0.4s;
+      }
+      a:hover::before {
+        scale: 1;
+      }
     }
   }
 
