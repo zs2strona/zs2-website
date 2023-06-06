@@ -20,6 +20,10 @@
   &__media {
     display: flex;
     gap: 36px;
+
+    &--white {
+      filter: invert(0.9);
+    }
   }
   &__nav {
     display: flex;
@@ -44,14 +48,14 @@
     width: 100%;
     height: 3px;
   }
-  &__menu-item--white {
-    background-color: $white;
-  }
   &__menu-item--black {
     background-color: $black;
     @media all and (width >= 555px) {
       transition-delay: 0.4s;
     }
+  }
+  &__menu-item--white {
+    background-color: $white;
   }
 
   //* Droped search

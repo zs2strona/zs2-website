@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
-export default function Header() {
+export default function Header({ white }) {
   const [isToggleOn, setIsToggleOn] = useState(false)
   const [isToggleSearchOn, setIsToggleSearchOn] = useState(false)
 
@@ -24,7 +24,7 @@ export default function Header() {
         <div className="header__cointainer">
           <Link href="/" onClick={reset}>
             <Image
-              src="Logo.svg"
+              src={white ? 'logo-white.svg' : 'Logo.svg'}
               alt="logo"
               width="323"
               height="52"
@@ -37,13 +37,31 @@ export default function Header() {
             <div className="header__cointainer--left">
               <div className="header__media">
                 <Link href="https://www.tiktok.com/@zs2lancut" target="_blank">
-                  <Image src="Tictok.svg" alt="tiktok" width="28" height="28" />
+                  <Image
+                    src="Tictok.svg"
+                    alt="tiktok"
+                    width="28"
+                    height="28"
+                    className={white ? 'header__media--white' : ''}
+                  />
                 </Link>
                 <Link href="https://www.facebook.com/zs2lancut/" target="_blank">
-                  <Image src="Facebook.svg" alt="facebook" width="28" height="28" />
+                  <Image
+                    src="Facebook.svg"
+                    alt="facebook"
+                    width="28"
+                    height="28"
+                    className={white ? 'header__media--white' : ''}
+                  />
                 </Link>
                 <Link href="https://www.instagram.com/zs2lancut/" target="_blank">
-                  <Image src="Instagram.svg" alt="instagram" width="28" height="28" />
+                  <Image
+                    src="Instagram.svg"
+                    alt="instagram"
+                    width="28"
+                    height="28"
+                    className={white ? 'header__media--white' : ''}
+                  />
                 </Link>
               </div>
 
@@ -63,19 +81,19 @@ export default function Header() {
                 />
                 <div className="header__menu" onClick={toggle}>
                   <div
-                    className={
+                    className={`${
                       isToggleOn ? 'header__menu-item--white' : 'header__menu-item--black'
-                    }
+                    } ${white ? 'header__menu-item--white' : ''}`}
                   ></div>
                   <div
-                    className={
+                    className={`${
                       isToggleOn ? 'header__menu-item--white' : 'header__menu-item--black'
-                    }
+                    } ${white ? 'header__menu-item--white' : ''}`}
                   ></div>
                   <div
-                    className={
+                    className={`${
                       isToggleOn ? 'header__menu-item--white' : 'header__menu-item--black'
-                    }
+                    } ${white ? 'header__menu-item--white' : ''}`}
                   ></div>
                 </div>
               </div>

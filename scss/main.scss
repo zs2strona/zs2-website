@@ -33,8 +33,7 @@ body {
     @include setFlex(row);
     gap: 3vw;
     font-size: $paragraphSize;
-    color: #cacaca;
-    text-shadow: 2px 2px black;
+    color: #ffffff;
   }
   &__button {
     margin: auto;

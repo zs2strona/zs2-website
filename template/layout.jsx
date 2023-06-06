@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 const descriptionTemplate =
   'Z nami rozwiniesz swoje zainteresowania, posiądziesz wiedzę i umiejętności. Wszystko pod okiem najlepszych nauczycieli i wspaniałych kolegów, którzy zawsze Ci doradzą oraz pomogą z każdym problemem.'
 
-export const Layout = ({ children, title, description }) => {
+export const Layout = ({ children, title, description, white }) => {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ export const Layout = ({ children, title, description }) => {
       </Head>
 
       <div className={inter.className}>
-        <Header />
+        <Header white={white} />
         <Availability />
         <main>{children}</main>
       </div>

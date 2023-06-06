@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div className={inter.className}>
-      <Layout title="Strona główna" />
+      <Layout title="Strona główna" white={true} />
 
       <main className="main-page">
         <video
