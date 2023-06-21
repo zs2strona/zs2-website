@@ -14,6 +14,15 @@ body {
   min-height: calc(82vh - 120px);
   @include setFlex(column, center, none);
 
+  table,
+  td {
+    border: 2px solid $black;
+    border-collapse: collapse;
+
+    p {
+      padding-inline: 8px;
+    }
+  }
   &__slider {
     position: relative;
 

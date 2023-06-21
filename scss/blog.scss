@@ -82,6 +82,9 @@ body {
     div {
       @include setClamp(2);
     }
+    &--texts table {
+      display: none;
+    }
     .znizki {
       @include setClamp(4);
 

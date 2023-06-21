@@ -35,7 +35,7 @@ export default function AnnouncementPage({ posts }) {
                       className="main-blogPage__item--image"
                     />
 
-                    <div className="main-blogPage__item-texts">
+                    <div className="main-blogPage__item--texts">
                       <h2>{post.title}</h2>
                       <div
                         dangerouslySetInnerHTML={{
