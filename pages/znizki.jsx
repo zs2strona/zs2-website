@@ -35,7 +35,7 @@ export default function DiscountsPage({ discounts }) {
           {discounts.map((discount) => (
             <div key={discount.title} className="main-blogPage__item">
               <Image
-                src={discount.image.url}
+                src={discount.mainImage.url}
                 alt={discount.title}
                 width="200"
                 height="200"
@@ -74,7 +74,7 @@ export async function getStaticProps() {
           description {
             html
           }
-          image {
+          mainImage {
             url
           }
         }
