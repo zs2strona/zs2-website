@@ -22,27 +22,24 @@ export default function DocumentsPage({ documents }) {
         </h1>
 
         <section className="main-blogPage__container">
-          {documents.map(
-            (document) =>
-              document.hidden === 'Nie' && (
-                <div key={document.id} className="main-blogPage__item">
-                  <Link href={document.file.url}>
-                    <Image
-                      src="document-icon.svg"
-                      alt={document.title}
-                      width="200"
-                      height="200"
-                      className="main-blogPage__item--image Dokumenty"
-                    />
+          {documents.map((document) => (
+            <div key={document.id} className="main-blogPage__item">
+              <Link href={document.file.url}>
+                <Image
+                  src="document-icon.svg"
+                  alt={document.title}
+                  width="200"
+                  height="200"
+                  className="main-blogPage__item--image Dokumenty"
+                />
 
-                    <div className="main-blogPage__item-texts">
-                      <h2>{document.title}</h2>
-                      <p>{document.description}</p>
-                    </div>
-                  </Link>
+                <div className="main-blogPage__item-texts">
+                  <h2>{document.title}</h2>
+                  <p>{document.description}</p>
                 </div>
-              )
-          )}
+              </Link>
+            </div>
+          ))}
         </section>
 
         <button className="main-blogPage__return" onClick={() => router.back()}>
@@ -66,7 +63,6 @@ export async function getStaticProps() {
           file {
             url
           }
-          hidden
         }
       }
     `,
