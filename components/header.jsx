@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isOn, setIsOn] = useState(false)
-  const isMainPage = usePathname() === '/'
+  let isMainPage = usePathname() === '/'
 
   function reset() {
     setIsOn(false)
