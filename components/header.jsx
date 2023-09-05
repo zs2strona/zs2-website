@@ -22,7 +22,7 @@ export default function Header() {
       <header className="header">
         <Link href="/" onClick={reset}>
           <Image
-            src={isMainPage ? '/logo-white.svg' : '/logo.svg'}
+            src={isMainPage ? '/logo-white.svg' : '/logo-main.svg'}
             alt="logo"
             width="323"
             height="52"
