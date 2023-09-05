@@ -43,7 +43,12 @@
     width: 38vw;
     min-height: 65px;
     font-size: 31px;
-    @extend %buttonGeneral;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
 
     span {
       color: $yellow;

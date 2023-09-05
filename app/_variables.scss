@@ -20,13 +20,3 @@ $maxWidth: 1280px;
   -webkit-line-clamp: $line-clamp;
   overflow: hidden;
 }
-
-//* General button elements
-%buttonGeneral {
-  border-radius: 5px;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.4s;
-}
