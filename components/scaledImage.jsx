@@ -21,14 +21,13 @@ export default function ScaledImage({ src, alt, width, height, className }) {
       />
 
       {isOn && (
-        <div className="scaled-image">
+        <div className="scaled-image pointer" onClick={() => setIsOn(false)}>
           <Image
             src={src}
             alt={alt}
             width="750"
             height="750"
-            onClick={() => setIsOn(false)}
-            className="scaled-image__image pointer"
+            className="scaled-image__image"
             placeholder="blur"
             blurDataURL={BlurDataUrl()}
           />
