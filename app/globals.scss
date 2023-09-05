@@ -26,19 +26,6 @@ a {
   background: #202020;
 }
 
-//* Special link style
-.Link {
-  font-weight: 700;
-  text-decoration: underline;
-  color: $link;
-  display: flex;
-  align-items: center;
-
-  &::after {
-    content: '↵';
-  }
-}
-
 //* Darkness in menu
 .darknes {
   position: fixed;
