@@ -1,0 +1,50 @@
+@use '@/app/variables' as *;
+
+//* Footer elements
+.footer {
+  margin: auto;
+  max-width: $maxWidth;
+  height: 175px;
+  background-color: #000;
+  @include setFlex(row);
+  gap: 25px;
+  color: #fff;
+
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  &__description {
+    @include setFlex(row, space-between);
+    line-height: 25px;
+    color: #b0b0b0;
+  }
+
+  //* Media query
+  @media all and (width <= 1280px) {
+    &__text h1 {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+  @media all and (width <= 950px) {
+    &__description {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10%;
+      height: auto;
+    }
+    &__logo {
+      display: none;
+    }
+    height: auto;
+  }
+  @media all and (width <= 365px) {
+    &__text h1 {
+      font-size: 22px;
+    }
+    &__description p {
+      font-size: 14px;
+    }
+  }
+}

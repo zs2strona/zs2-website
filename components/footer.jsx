@@ -1,15 +1,16 @@
+'use client'
+
+import './style/footer.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Inter } from '@next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
-  return (
-    <>
-      <section className="headerbg" />
+  const pathname = usePathname()
 
-      <footer className={`footer ${inter.className}`}>
+  return (
+    pathname != '/' && (
+      <footer className="footer ">
         <div className="footer__text">
           <h1>Zespół Szkół nr 2 im. Jana Kochanowskiego w Łańcucie</h1>
 
@@ -27,7 +28,7 @@ export default function Footer() {
             </p>
 
             <p>
-              <Link href="https://www.google.com/maps/place/Zespół+Szkół+nr+2+im.+J.+Kochanowskiego/@50.0914188,22.2312803,15z/data=!4m5!3m4!1s0x473cee970324f3a7:0x1d1b4a02738c9d6f!8m2!3d50.0914188!4d22.2312803">
+              <Link href="https://goo.gl/maps/h7hHYKVXTWPDQJeE9">
                 ul. Podzwierzyniec
                 <br />
                 41,37-100 Łańcut
@@ -48,13 +49,13 @@ export default function Footer() {
         </div>
 
         <Image
-          src="/footer-logo.png"
+          src="/footer-logo.webp"
           alt="logo"
           className="footer__logo"
           width="128"
           height="128"
         />
       </footer>
-    </>
+    )
   )
 }

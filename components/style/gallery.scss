@@ -1,0 +1,68 @@
+@use '@/app/variables' as *;
+
+.gallery {
+  &__content {
+    margin: 60px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media all and (width <= 780px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media all and (width <= 515px) {
+      grid-template-columns: 1fr;
+    }
+    gap: 10px;
+  }
+  &__image {
+    margin: auto;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.4s scale;
+
+    @media all and (width >= 600px) {
+      &:hover {
+        scale: 1.04;
+      }
+    }
+    @media all and (width <= 515px) {
+      height: auto;
+    }
+  }
+  &__image--max {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000f0;
+    @include setFlex(row);
+    gap: 25px;
+    z-index: 99;
+    user-select: none;
+
+    img {
+      width: min(600px, 80%);
+      height: auto;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button {
+      background: none;
+      border: none;
+      font-size: 5rem;
+      color: $yellow;
+      transition: 0.4s opacity;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    @media all and (width <= 515px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@use '../variables' as *;
+
+.cadre {
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  max-width: $maxWidth;
+  @include setFlex(column, flex-start, flex-start);
+  gap: 20px;
+
+  &__title {
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    color: $grey;
+
+    span {
+      color: $yellow;
+    }
+
+    @media all and (width <= 1050px) {
+      align-self: center;
+      text-align: center;
+    }
+    @media all and (width <= 425px) {
+      font-size: 2rem;
+    }
+  }
+  &__border {
+    width: 100%;
+    border: 1px solid $lightGrey;
+  }
+  &__posts {
+    margin: 25px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media all and (width <= 1050px) {
+      grid-template-columns: 1fr;
+    }
+    gap: 40px;
+  }
+  &__post {
+    @include setFlex(row, flex-start, flex-start);
+    gap: 40px;
+    transition: 0.4s scale;
+
+    &--description h2 {
+      font-size: 1.6rem;
+    }
+
+    @media all and (width >= 1050px) {
+      &:hover {
+        scale: 1.02;
+      }
+    }
+    @media all and (width <= 1050px) {
+      margin: auto;
+    }
+    @media all and (width <= 425px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__image {
+    width: auto;
+    height: 180px;
+  }
+}

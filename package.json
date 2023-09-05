@@ -1,6 +1,6 @@
 {
   "name": "zs2website",
-  "version": "2.0",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,13 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.15",
-    "@next/font": "^13.4.4",
-    "eslint": "^8.41.0",
-    "eslint-config-next": "^13.4.4",
-    "next": "^13.4.4",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
+    "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.62.1"
+    "sass": "^1.66.1"
   }
 }

@@ -1,0 +1,105 @@
+@use '@/app/variables' as *;
+
+.list {
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  max-width: $maxWidth;
+
+  &__header {
+    margin: auto;
+    width: 100%;
+    @include setFlex(row, space-between, flex-start);
+
+    @media all and (width <= 1280px) {
+      width: 95%;
+    }
+    @media all and (width <= 520px) {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__description {
+    margin-bottom: 60px;
+    max-width: 500px;
+
+    &--title {
+      margin: 10px 0px;
+      font-size: 2.5rem;
+      color: $yellow;
+    }
+    &--subtitle {
+      margin: 0px;
+      font-size: 1.2rem;
+      color: $grey;
+    }
+  }
+  &__icon {
+    user-select: none;
+
+    @media all and (width <= 520px) {
+      display: none;
+    }
+  }
+  &__posts {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    row-gap: 40px;
+
+    @media all and (width <= 1000px) {
+      grid-template-columns: 1fr;
+      row-gap: 55px;
+    }
+    @media all and (width <= 1280px) {
+      margin: auto;
+      width: 95%;
+    }
+  }
+  &__post {
+    width: 100%;
+    @include setFlex(row, flex-start, flex-start);
+    gap: 20px;
+    transition: 0.4s scale;
+
+    @media all and (width >= 1050px) {
+      &:hover {
+        scale: 1.02;
+      }
+    }
+
+    @media all and (width <= 450px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+
+    &--documents {
+      width: 100px;
+      height: auto;
+    }
+
+    @media all and (width <= 450px) {
+      width: 100%;
+      height: 370px;
+    }
+  }
+  &__title {
+    margin-top: 0px;
+    color: $grey;
+    font-size: 1.5rem;
+  }
+  &__content {
+    @include setClamp(4);
+
+    table {
+      display: none;
+    }
+  }
+}

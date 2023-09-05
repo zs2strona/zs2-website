@@ -1,0 +1,66 @@
+@use '@/app/variables' as *;
+
+//* Availability animation
+@keyframes availability-on {
+  0% {
+    transform: translateX(-160px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes availability-off {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-160px);
+  }
+}
+
+//* Availability general elements
+.availability {
+  position: fixed;
+  left: 0px;
+  top: 20%;
+  z-index: 5;
+  color: #fff;
+  transform: translateX(-160px);
+  @include setFlex(row-reverse, center, flex-start);
+  animation: availability-off 0.25s ease-out;
+
+  &__menu {
+    margin: 0px;
+    padding: 15px 10px;
+    width: 160px;
+    background-color: #000;
+    list-style: none;
+    border-right: 1px solid #fff;
+    @include setFlex(column, center, flex-start);
+    gap: 10px;
+    font-weight: bold;
+    visibility: hidden;
+    transition-delay: 0.25s;
+
+    li {
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    cursor: pointer;
+  }
+
+  &--on {
+    transform: translateX(0px);
+    animation: availability-on 0.25s ease-in;
+
+    .availability__menu {
+      visibility: visible;
+      transition-delay: 0s;
+    }
+  }
+
+  @media all and (width <= 510px) {
+    display: none;
+  }
+}

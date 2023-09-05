@@ -1,0 +1,156 @@
+@use './variables' as *;
+
+//* General Settings
+body {
+  margin: 0px;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+//* Scrollbar
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6f6f6f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #202020;
+}
+
+//* Special link style
+.Link {
+  font-weight: 700;
+  text-decoration: underline;
+  color: $link;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '↵';
+  }
+}
+
+//* Darkness in menu
+.darknes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a0;
+  z-index: 4;
+  transition: 0.4s;
+}
+
+//* Header backgraund
+.header-backgraund {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  min-height: 120px;
+  z-index: 3;
+}
+
+//* Availability class
+.hight-contrast {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  li,
+  span,
+  a {
+    color: #ffff00;
+  }
+  background-color: #202020;
+}
+.large-font {
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  a {
+    scale: 1.05;
+  }
+}
+.link-on a,
+.link-on a li {
+  text-decoration: underline;
+  color: -webkit-link;
+}
+
+//* Scaled Image
+.pointer {
+  cursor: pointer;
+}
+.scaled-image {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-color: #000000f0;
+  z-index: 99;
+  @include setFlex(row);
+
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100vh;
+    border-radius: 5px;
+  }
+}
+
+//* Error 404
+.error {
+  width: 100%;
+  height: 82vh;
+  @include setFlex(column);
+  gap: 100px;
+
+  h1 {
+    font-size: 64px;
+    transform: rotate(15deg);
+  }
+  h3 {
+    font-size: 32px;
+    transform: rotate(-5deg);
+  }
+  span {
+    color: $yellow;
+  }
+  @media all and (width <= 430px) {
+    h1 {
+      font-size: 38px;
+      transform: rotate(0deg);
+    }
+    h3 {
+      font-size: 28px;
+      transform: rotate(0deg);
+    }
+  }
+}
+
+//* Loading
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(100);
+}

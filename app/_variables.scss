@@ -1,0 +1,32 @@
+//* Variables
+$yellow: #ffbf58;
+$link: #243b7d;
+$grey: #1e1e1e;
+$lightGrey: #0000001a;
+$maxWidth: 1280px;
+
+//* Flex template
+@mixin setFlex($flex-direction, $justify-content: center, $align-items: center) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+//* Clamp template
+@mixin setClamp($line-clamp: 2) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-clamp;
+  overflow: hidden;
+}
+
+//* General button elements
+%buttonGeneral {
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}

@@ -1,0 +1,75 @@
+@use '../variables' as *;
+
+//* Rekrutacja elements
+.rekrutacja {
+  margin-top: 120px;
+  margin-bottom: calc(82vh - 691px);
+  @include setFlex(column);
+  gap: 5px;
+  text-align: center;
+
+  &__title {
+    font-size: 3.2rem;
+
+    span {
+      color: $yellow;
+    }
+  }
+  &__image {
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  &__buttons {
+    margin-top: 50px;
+    max-width: 780px;
+    height: auto;
+    @include setFlex(row);
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &__button {
+    @extend %buttonGeneral;
+    font-size: 31px;
+    min-height: 65px;
+
+    span {
+      color: $yellow;
+    }
+
+    &--long {
+      width: 500px;
+    }
+    &--short {
+      width: 250px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  //* Media Query
+  @media all and (width <= 550px) {
+    &__buttons {
+      flex-direction: column;
+    }
+    &__button {
+      width: 85vw;
+    }
+  }
+  @media all and (width <= 400px) {
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__image {
+      width: 98%;
+    }
+    &__button {
+      width: 90vw;
+      font-size: 26px;
+    }
+  }
+  @media (height <= 900px) {
+    margin-bottom: 20px;
+  }
+}
