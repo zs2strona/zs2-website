@@ -10,7 +10,7 @@ export default function Home() {
     <main className="main-page">
       <video
         className="main-page__video"
-        src="/movie.mp4"
+        src="https://www.youtube.com/watch?v=CXvkEo-5eks"
         autoPlay="autoplay"
         playsInline="playsinline"
         loop={true}
