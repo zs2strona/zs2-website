@@ -3,9 +3,10 @@ import { getDirectionsPostBySlug } from '@/lib/queries'
 
 export async function generateMetadata({ params }) {
   const direction = await getDirectionsPostBySlug(params)
+  const title = direction[0] ? direction[0].title : '404'
 
   return {
-    title: direction[0].title,
+    title: title,
   }
 }
 

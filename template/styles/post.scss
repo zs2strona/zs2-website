@@ -61,11 +61,15 @@
     td {
       border: 1px solid #000;
       border-collapse: collapse;
+      word-break: break-all;
 
       p {
         padding-inline: 10px;
         margin-block: 10px;
       }
+    }
+    video {
+      width: 100%;
     }
   }
   &__files {

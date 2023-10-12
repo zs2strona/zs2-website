@@ -1,16 +1,22 @@
 import './main-page.scss'
 import Link from 'next/link'
+import { getMovies } from '@/lib/queries'
 
 export const metadata = {
   title: 'Strona Główna | Zespół Szkoł Nr 2 im. Jana Kochanowskiego w Łańcucie',
 }
 
-export default function Home() {
+export default async function Home() {
+  const movie = await getMovies()
+  const movieUrl = movie[0].movie.url
+
+  // Widze jak patrzysz👀 ~~ domun___ ~ Discord
+
   return (
     <main className="main-page">
       <video
         className="main-page__video"
-        src="https://www.youtube.com/watch?v=CXvkEo-5eks"
+        src={movieUrl}
         autoPlay="autoplay"
         playsInline="playsinline"
         loop={true}

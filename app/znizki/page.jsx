@@ -6,7 +6,7 @@ export const metadata = {
 }
 
 export default async function Discounts() {
-  const discounts = await getDiscountsPosts()
+  const discounts =  await getDiscountsPosts()
 
   return (
     <List

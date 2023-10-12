@@ -61,7 +61,7 @@ export default async function Szkola() {
       <hr />
 
       <section className="szkola__posts">
-        {schoolPosts.map((post) => (
+        {schoolPosts ? schoolPosts.map((post) => (
           <Link key={post.id} href={post.link}>
             <div className="szkola__post">
               <Image src={post.image.url} alt={post.title} width="400" height="300" />
@@ -69,7 +69,9 @@ export default async function Szkola() {
               <h2>{post.title}</h2>
             </div>
           </Link>
-        ))}
+        )): (
+          <h1>Niedostępne!</h1>
+        )}
       </section>
     </main>
   )

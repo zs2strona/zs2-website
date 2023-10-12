@@ -1,5 +1,6 @@
 import './globals.scss'
 import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import Header from '@/components/header'
 import Availability from '@/components/availability'
 import Footer from '@/components/footer'
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <Availability />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

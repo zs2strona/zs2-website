@@ -3,9 +3,10 @@ import { getAnnouncementsPostBySlug } from '@/lib/queries'
 
 export async function generateMetadata({ params }) {
   const announcements = await getAnnouncementsPostBySlug(params)
+  const title = announcements[0] ? announcements[0].title : '404'
 
   return {
-    title: announcements[0].title,
+    title: title,
   }
 }
 

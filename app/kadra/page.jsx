@@ -2,6 +2,7 @@ import './kadra.scss'
 import { getCadrePosts } from '@/lib/queries'
 import Image from 'next/image'
 import BlurDataUrl from '@/components/blurDataUrl'
+import NotFound from '../not-found'
 
 export const metadata = {
   title: 'Kadra',
@@ -10,7 +11,7 @@ export const metadata = {
 export default async function Cadre() {
   const cadres = await getCadrePosts()
 
-  return (
+  return cadres ? (
     <main className="cadre">
       <h1 className="cadre__title">
         Dyrekcja w <span>Naszej</span> Szkole!
@@ -98,5 +99,7 @@ export default async function Cadre() {
         )}
       </div>
     </main>
+  ) : (
+    NotFound()
   )
 }

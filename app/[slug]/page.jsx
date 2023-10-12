@@ -10,8 +10,8 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function SchoolPost({ params }) {
-  const otherPost =  await getOtherPostBySlug(params) 
+export default async function OhterPost({ params }) {
+  const otherPost =  await getOtherPostBySlug(params)
 
-  return <Post data={otherPost} params="szkola" />
+  return <Post data={otherPost} params="/" />
 }

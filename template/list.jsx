@@ -46,7 +46,7 @@ export default async function List({ children, data, title, subtitle, icon, docu
                 <div
                   className="list__content"
                   dangerouslySetInnerHTML={{
-                    __html: documents ? post.description : post.description.html,
+                    __html: documents ? post.file.fileName : post.description.html,
                   }}
                 />
               </div>

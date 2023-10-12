@@ -3,6 +3,7 @@ import { getDirectionsPosts } from '@/lib/queries'
 import Image from 'next/image'
 import Link from 'next/link'
 import BlurDataUrl from '@/components/blurDataUrl'
+import { notFound } from 'next/navigation'
 
 export const metadata = {
   title: 'Kierunki',
@@ -13,7 +14,7 @@ export const metadata = {
 export default async function Kierunki() {
   const directions = await getDirectionsPosts()
 
-  return (
+  return directions ? (
     <main className="kierunki">
       <h1 className="kierunki__title">Technikum Nr 1</h1>
       <hr className="kierunki__border" />
@@ -96,5 +97,7 @@ export default async function Kierunki() {
         )}
       </div>
     </main>
+  ) : (
+    notFound()
   )
 }
